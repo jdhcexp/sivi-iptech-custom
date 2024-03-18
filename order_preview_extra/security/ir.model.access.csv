@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+order_preview_extra.access_sale_order,access_sale_order,order_preview_extra.model_sale_order,base.group_user,1,1,1,1
+order_preview_extra.access_sale_order_line,access_sale_order_line,order_preview_extra.model_sale_order_line,base.group_user,1,1,1,1
+order_preview_extra.access_sale_order_document,access_sale_order_document,order_preview_extra.model_sale_order_document,base.group_user,1,1,1,1

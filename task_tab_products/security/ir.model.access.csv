@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+task_tab_products.access_tab_line,access_tab_line,task_tab_products.model_tab_line,base.group_user,1,1,1,1
+task_tab_products.product_product,access_product_product,task_tab_products.model_product_product,base.group_user,1,1,1,1
+task_tab_products.product_template,access_product_template,task_tab_products.model_product_template,base.group_user,1,1,1,1
+task_tab_products.access_project_task_product_attribute_custom_value,access_project_task_product_attribute_custom_value,task_tab_products.model_project_task_product_attribute_custom_value,base.group_user,1,1,1,1

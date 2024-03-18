@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="tt_project_task_view_form" model="ir.ui.view">
+        <field name="name">project.task</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//notebook" position="inside">
+                <field name="order_line" invisible="1" />
+<!--                <page name="all_product_page" string="All">-->
+
+<!--                     <field name="order_line">-->
+
+<!--                            <tree name="task products" editable="bottom">-->
+<!--&lt;!&ndash;                                <field name="domain">[('type','=','equipos')]</field>&ndash;&gt;-->
+<!--                                <field name="type" />-->
+<!--                                <field name="product_id" invisible="1" />-->
+<!--                                <field name="product_template_id"-->
+<!--                                        string="Product"-->
+<!--                                        widget="sol_product_many2one"-->
+<!--                                        >-->
+
+<!--                                </field>-->
+<!--                                <field name="product_template_attribute_value_ids" invisible="1" />-->
+<!--                                <field name="product_custom_attribute_value_ids" invisible="1" >-->
+<!--                                    <tree>-->
+<!--                                        <field name="custom_product_template_attribute_value_id" />-->
+<!--                                        <field name="custom_value" />-->
+<!--                                    </tree>-->
+<!--                                </field>-->
+<!--                                <field name="product_no_variant_attribute_value_ids" invisible="1" />-->
+<!--                                <field name="is_configurable_product" invisible="1" />-->
+<!--                                <field name="product_uom_qty" invisible="1" />-->
+<!--                                <field name="name"/>-->
+<!--                            </tree>-->
+
+<!--                     </field>-->
+
+<!--                </page>-->
+                <page name="product_page" string="Equipos" attrs="{'invisible': [('name', 'not in', ('Asignacion de Equipos'))]}">
+
+                     <field name="gear" >
+
+                            <tree name="task products" editable="bottom">
+<!--                                <field name="domain">[('type','=','equipos')]</field>-->
+
+                                <field name="product_id" invisible="1" />
+                                <field name="product_template_id"
+                                        string="Product"
+                                        widget="sol_product_many2one"
+                                        >
+
+                                </field>
+                                <field name="product_template_attribute_value_ids" invisible="1" />
+                                <field name="product_custom_attribute_value_ids" invisible="1" >
+                                    <tree>
+                                        <field name="custom_product_template_attribute_value_id" />
+                                        <field name="custom_value" />
+                                    </tree>
+                                </field>
+                                <field name="product_no_variant_attribute_value_ids" invisible="1" />
+                                <field name="is_configurable_product" invisible="1" />
+                                <field name="product_uom_qty" invisible="1" />
+                                <field name="name"/>
+                            </tree>
+
+                     </field>
+
+                </page>
+               <page name="provider_page" string="Proveedor" attrs="{'invisible': [('name', 'not in', ('Configuración y Pruebas de Servicio'))]}">
+
+                     <field name="provider" >
+
+                            <tree name="task products" editable="bottom">
+
+                                <field name="product_id" invisible="1" />
+                                <field name="product_template_id"
+                                        string="Product"
+                                        widget="sol_product_many2one"
+                                        >
+
+                                </field>
+                                <field name="product_template_attribute_value_ids" invisible="1" />
+                                <field name="product_custom_attribute_value_ids" invisible="1" >
+                                    <tree>
+                                        <field name="custom_product_template_attribute_value_id" />
+                                        <field name="custom_value" />
+                                    </tree>
+                                </field>
+                                <field name="product_no_variant_attribute_value_ids" invisible="1" />
+                                <field name="is_configurable_product" invisible="1" />
+                                <field name="product_uom_qty" invisible="1" />
+                                <field name="name"/>
+                            </tree>
+
+                     </field>
+
+                </page>
+
+                 <page name="personal_page" string="Personal" attrs="{'invisible': [('name', 'not in', ('Configuración y Pruebas de Servicio'))]}">
+
+                     <field name="personal">
+
+                            <tree name="task products" editable="bottom">
+<!--                                <field name="domain">[('type','=','equipos')]</field>-->
+
+                                <field name="product_id" invisible="1" />
+                                <field name="product_template_id"
+                                        string="Product"
+                                        widget="sol_product_many2one"
+                                        >
+
+                                </field>
+                                <field name="product_template_attribute_value_ids" invisible="1" />
+                                <field name="product_custom_attribute_value_ids" invisible="1" >
+                                    <tree>
+                                        <field name="custom_product_template_attribute_value_id" />
+                                        <field name="custom_value" />
+                                    </tree>
+                                </field>
+                                <field name="product_no_variant_attribute_value_ids" invisible="1" />
+                                <field name="is_configurable_product" invisible="1" />
+                                <field name="product_uom_qty" invisible="1" />
+                                <field name="name"/>
+                            </tree>
+
+                     </field>
+
+                </page>
+
+                <page name="software_page" string="Software de gestión" attrs="{'invisible': [('name', 'not in', ('Configuración y Pruebas de Servicio'))]}">
+
+                     <field name="software">
+
+                            <tree name="task products" editable="bottom">
+<!--                                <field name="domain">[('type','=','equipos')]</field>-->
+
+                                <field name="product_id" invisible="1" />
+                                <field name="product_template_id"
+                                        string="Product"
+                                        widget="sol_product_many2one"
+                                        >
+
+                                </field>
+                                <field name="product_template_attribute_value_ids" invisible="1" />
+                                <field name="product_custom_attribute_value_ids" invisible="1" >
+                                    <tree>
+                                        <field name="custom_product_template_attribute_value_id" />
+                                        <field name="custom_value" />
+                                    </tree>
+                                </field>
+                                <field name="product_no_variant_attribute_value_ids" invisible="1" />
+                                <field name="is_configurable_product" invisible="1" />
+                                <field name="product_uom_qty" invisible="1" />
+                                <field name="name"/>
+                            </tree>
+
+                     </field>
+
+                </page>
+
+
+                <page name="documentation_page" string="Documentación técnica" attrs="{'invisible': [('name', 'not in', ('Configuración y Pruebas de Servicio'))]}">
+
+                     <field name="documentation">
+
+                            <tree name="task products" editable="bottom">
+<!--                                <field name="domain">[('type','=','equipos')]</field>-->
+
+                                <field name="product_id" invisible="1" />
+                                <field name="product_template_id"
+                                        string="Product"
+                                        widget="sol_product_many2one"
+                                        >
+
+                                </field>
+                                <field name="product_template_attribute_value_ids" invisible="1" />
+                                <field name="product_custom_attribute_value_ids" invisible="1" >
+                                    <tree>
+                                        <field name="custom_product_template_attribute_value_id" />
+                                        <field name="custom_value" />
+                                    </tree>
+                                </field>
+                                <field name="product_no_variant_attribute_value_ids" invisible="1" />
+                                <field name="is_configurable_product" invisible="1" />
+                                <field name="product_uom_qty" invisible="1" />
+                                <field name="name"/>
+                            </tree>
+
+                     </field>
+
+                </page>
+
+                <page name="site_page" string="Equipos" attrs="{'invisible': [('name', 'not in', ('Visita en Sitio'))]}">
+
+                     <field name="site">
+
+                            <tree name="task products" editable="bottom">
+                                <field name="product_id" invisible="1" />
+                                <field name="product_template_id"
+                                        string="Product"
+                                        widget="sol_product_many2one"
+                                        >
+
+                                </field>
+                                <field name="product_template_attribute_value_ids" invisible="1" />
+                                <field name="product_custom_attribute_value_ids" invisible="1" >
+                                    <tree>
+                                        <field name="custom_product_template_attribute_value_id" />
+                                        <field name="custom_value" />
+                                    </tree>
+                                </field>
+                                <field name="product_no_variant_attribute_value_ids" invisible="1" />
+                                <field name="is_configurable_product" invisible="1" />
+                                <field name="product_uom_qty" invisible="1" />
+                                <field name="name"/>
+                            </tree>
+
+                     </field>
+
+                </page>
+		<page name="product_simcard_page" string="Equipos" attrs="{'invisible': [('name', 'not in', ('Entrega de SIMCARD'))]}">
+                     <field name="simcard" >
+
+                            <tree name="task products" editable="bottom">
+<!--                                <field name="domain">[('type','=','equipos')]</field>-->
+
+                                <field name="product_id" invisible="1" />
+                                <field name="product_template_id"
+                                        string="Product"
+                                        widget="sol_product_many2one"
+                                        >
+
+                                </field>
+                                <field name="product_template_attribute_value_ids" invisible="1" />
+                                <field name="product_custom_attribute_value_ids" invisible="1" >
+                                    <tree>
+                                        <field name="custom_product_template_attribute_value_id" />
+                                        <field name="custom_value" />
+                                    </tree>
+                                </field>
+                                <field name="product_no_variant_attribute_value_ids" invisible="1" />
+                                <field name="is_configurable_product" invisible="1" />
+                                <field name="product_uom_qty" invisible="1" />
+                                <field name="name"/>
+                            </tree>
+
+                     </field>
+
+                </page>
+
+            </xpath>
+        </field>
+    </record>   
+</odoo>

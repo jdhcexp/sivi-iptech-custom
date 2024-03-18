@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template inherit_id="sale.sale_order_portal_content" id="sale_order_portal_content_documents">
+        <xpath expr='//section[@id="details"]' position="after">
+            <h3 >Documentos</h3>
+            <hr class="mt-0 mb-1"></hr>
+            <input  type="radio" id="nat" name="client_type" value="nat" checked="1"/>
+            <label for="nat">Persona Natural</label><br></br>
+            <input  type="radio" id="emp" name="client_type" value="emp" />
+            <label  for="emp">Empresa</label><br></br>
+            <p></p>
+            <div id="persona_natural">
+                cedula:
+                <button class="upload_cedula_btn btn btn-secondary" type="button" title="Add attachment">
+                                            <i class="fa fa-paperclip"></i>
+                                        </button>
+
+                <div class="d-none">
+                                <input type="file" class="upload_cedula_fld" multiple="multiple"/>
+                            </div>
+                <p></p>
+                <div class="row cedula-files">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="o_portal_chatter_attachment mb-2 position-relative text-center" data-id="">
+
+                            <a href="/web/content/1596?download=true&amp;access_token=d107ef6b-916c-43d4-825e-e57db22941c7" target="_blank">
+                                <div class="cedula_attachment_embedded o_image" title="ActaMatrimonio_1_compressed.pdf" data-mimetype="application/pdf"></div>
+                                <div class="cedula_attachment_name"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <br/>
+                Recibo servicios publicos:
+                <button class="upload_servicios_btn btn btn-secondary" type="button" title="Add attachment">
+                                            <i class="fa fa-paperclip"></i>
+                                        </button>
+
+                 <div class="d-none">
+                                <input type="file" class="upload_servicios_fld" multiple="multiple"/>
+                            </div>
+                <p></p>
+                <div class="row servicios-files">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="o_portal_chatter_attachment mb-2 position-relative text-center" data-id="">
+
+                            <a href="/web/content/1596?download=true&amp;access_token=d107ef6b-916c-43d4-825e-e57db22941c7" target="_blank">
+                                <div class="servicios_attachment_embedded o_image" title="ActaMatrimonio_1_compressed.pdf" data-mimetype="application/pdf"></div>
+                                <div class="servicios_attachment_name"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="empresa">
+
+
+                Rut:
+                <button class="upload_rut_btn btn btn-secondary" type="button" title="Add attachment">
+                                            <i class="fa fa-paperclip"></i>
+                                        </button>
+                <div class="d-none">
+                                <input type="file" class="upload_rut_fld" multiple="multiple"/>
+                            </div>
+
+                 <p></p>
+                <div class="row rut-files">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="o_portal_chatter_attachment mb-2 position-relative text-center" data-id="">
+
+                            <a href="/web/content/1596?download=true&amp;access_token=d107ef6b-916c-43d4-825e-e57db22941c7" target="_blank">
+                                <div class="rut_attachment_embedded o_image" title="ActaMatrimonio_1_compressed.pdf" data-mimetype="application/pdf"></div>
+                                <div class="rut_attachment_name"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+
+
+
+                Camara y Comercio:
+                <button class="upload_cc_btn btn btn-secondary" type="button" title="Add attachment">
+                                            <i class="fa fa-paperclip"></i>
+                                        </button>
+                  <div class="d-none">
+                                <input type="file" class="upload_cc_fld" multiple="multiple"/>
+                            </div>
+                 <p></p>
+                <div class="row cc-files">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="o_portal_chatter_attachment mb-2 position-relative text-center" data-id="">
+
+                            <a href="/web/content/1596?download=true&amp;access_token=d107ef6b-916c-43d4-825e-e57db22941c7" target="_blank">
+                                <div class="cc_attachment_embedded o_image" title="ActaMatrimonio_1_compressed.pdf" data-mimetype="application/pdf"></div>
+                                <div class="cc_attachment_name"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                Cedula de representante legal:
+                <button class="upload_cedrep_btn btn btn-secondary" type="button" title="Add attachment">
+                                            <i class="fa fa-paperclip"></i>
+                                        </button>
+                  <div class="d-none">
+                                <input type="file" class="upload_cedrep_fld" multiple="multiple"/>
+                            </div>
+                 <p></p>
+                <div class="row cedrep-files">
+                    <div class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="o_portal_chatter_attachment mb-2 position-relative text-center" data-id="">
+
+                            <a href="/web/content/1596?download=true&amp;access_token=d107ef6b-916c-43d4-825e-e57db22941c7" target="_blank">
+                                <div class="cedrep_attachment_embedded o_image" title="ActaMatrimonio_1_compressed.pdf" data-mimetype="application/pdf"></div>
+                                <div class="cedrep_attachment_name"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
+    </template>
+
+</odoo>

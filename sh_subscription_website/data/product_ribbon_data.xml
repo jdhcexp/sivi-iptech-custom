@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record forcecreate="True" id="sh_subscription_product_ribbon" model="product.ribbon">
+            <field name="html">Subscription</field>
+            <field name="html_class">bg-primary o_ribbon_left</field>
+        </record>
+    </data>
+</odoo>

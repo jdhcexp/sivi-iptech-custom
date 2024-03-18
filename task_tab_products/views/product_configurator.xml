@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template inherit_id="sale_product_configurator.configure_optional_products" id="sale_order_portal_content_documents">
+        <xpath expr='//th[@class="text-center td-qty"]' position="replace">
+            <th class="text-center td-qty" style="visibility: hidden;"><span class='label'>Quantity</span></th>
+        </xpath>
+        <xpath expr='//th[@class="text-center td-price"]' position="replace">
+            <th class="text-center td-price" style="visibility: hidden;"><span class='label'>Price</span></th>
+        </xpath>
+        <xpath expr='//td[@class="text-center td-qty"]' position="replace">
+             <td class="text-center td-qty" style="visibility: hidden;">
+                <t t-call='sale_product_configurator.product_quantity_config' />
+             </td>
+        </xpath>
+        <xpath expr='//td[@class="text-center td-price"]' position="replace">
+             <td class="text-center td-price" name="price" style="visibility: hidden;">
+                <div t-attf-class="text-danger oe_default_price oe_striked_price {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+                    t-out="combination_info['list_price']"
+                    t-options='{
+                        "widget": "monetary",
+                        "display_currency": (pricelist or product).currency_id
+                    }'
+                />
+                <span class="oe_price product_id" style="white-space: nowrap;"
+                    t-att-data-product-id="product.id"
+                    t-out="combination_info['price']"
+                    t-options='{
+                        "widget": "monetary",
+                        "display_currency": (pricelist or product).currency_id
+                    }'/>
+                <span class="js_raw_price d-none" t-out="product._get_contextual_price()"/>
+                <p class="css_not_available_msg alert alert-warning">Option not available</p>
+            </td>
+        </xpath>
+        <xpath expr='//tr[@class="o_total_row"]' position="replace">
+            <tr class="o_total_row" style="visibility: hidden;">
+                <td colspan="4" class="text-end">
+                    <strong>Total:</strong>
+                    <span class="js_price_total fw-bold" style="white-space: nowrap;"
+                        t-att-data-product-id="product.id"
+                        t-out="combination_info['price'] * (add_qty or 1)"
+                        t-options='{
+                            "widget": "monetary",
+                            "display_currency": (pricelist or product).currency_id
+                        }'/>
+                </td>
+            </tr>
+        </xpath>
+    </template>
+</odoo>

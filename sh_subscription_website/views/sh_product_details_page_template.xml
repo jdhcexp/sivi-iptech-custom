@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sh_product_details_page_with_subscription" inherit_id="website_sale.product" name="Details Page Subscription">
+        <xpath expr="//section[@id='product_detail']" position="after">
+                <div class="container">
+                    <t t-set="get_subscribe" t-value="product.product_variant_ids.filtered(lambda m: m.sh_product_subscribe)"/>
+                    <t t-if="get_subscribe">
+                        <h2 class="text-center">Plans Informations</h2>
+                    </t>
+                    <div class="row js_cls_subscription_plans_wrapper" style="justify-content: center; display: flex;">
+                        <t t-foreach="product.product_variant_ids" t-as="subscription_product">
+                            <t t-if="subscription_product.sh_product_subscribe">
+                                <div class="col-md-3 col-xs-12 mb24">
+                                    <div class="panel bg-light subscription_plan" t-att-data-subscription_id="subscription_product.id" style="border:1px solid #337ab7; font-family: &quot;Times New Roman&quot;, Times, serif; height:100%;border-radius:5px;">
+                                        <div class="panel-heading text-center" style="background-color: #337ab7; color:white; padding:5px;">
+                                            <h3 style="margin: 0">
+                                                <span t-esc="subscription_product.sudo().sh_subscription_plan_id.sudo().name"/>
+                                            </h3>
+                                            
+                                        </div>
+                                        <div class="css_cls_img_class" style="background-color:white; display:flex; justify-content:center;padding:15px;width:100%;height:250px;">
+                                            <span itemprop="image" t-field="subscription_product.image_1920" t-options="{'widget': 'image'}" t-att-alt="subscription_product.name"/>
+                                        </div>
+                                        <div class="panel-body text-center" style="background-color: #337ab7; color:white;">
+                                            
+                                            <t t-set="combination_info" t-value="subscription_product._get_combination_info_variant(add_qty=add_qty, pricelist=pricelist)"/>
+                                            
+                                            <t t-call="website_sale.product_price"/>
+                                        </div>
+                                        <ul class="list-group" style="color:black;">
+                                            <li class="list-group-item">
+                                                
+                                                <b>Plan Duration</b>:The plan has <span t-esc="subscription_product.sh_subscription_plan_id.sh_duration"/>
+&amp;nbsp;<span t-esc="subscription_product.sh_subscription_plan_id.sh_unit"/>
+duration.</li>
+                                        <li class="list-group-item" >
+                                            <b>Trial Period</b> : This plan has
+                                            <t t-if="subscription_product.sh_subscription_plan_id.sh_trial">
+                                                <span t-esc="subscription_product.sh_subscription_plan_id.sh_trial_duration"/>
+&amp;nbsp;
+                                                <span t-esc="subscription_product.sh_subscription_plan_id.sh_trial_unit"/>
+Trial period
+                                            </t>
+                                            <t t-else="">
+                                                <t t-if="subscription_product.sh_subscription_plan_id.sh_free_trial_for_current_month">
+                                                    Current Month Trial Period
+                                                </t>
+                                                <t t-else="">
+                                                    <span> No Trial Period.</span>
+                                                </t>
+                                                
+                                            </t>
+                                        </li>
+
+                                        <li class="list-group-item li_disc">
+                                            <b>Plan Description</b><br/>
+                                                <p t-field="subscription_product.sh_subscription_plan_id.sh_description"/>
+                                        </li>  
+                                    </ul>
+                                </div>
+                            </div>
+                        </t>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+iptech_chatter_extension.access_sale_order_line,access_sale_order_line,iptech_chatter_extension.model_sale_order_line,base.group_user,1,1,1,1
+iptech_chatter_extension.access_tab_line,access_tab_line,iptech_chatter_extension.model_tab_line,base.group_user,1,1,1,1

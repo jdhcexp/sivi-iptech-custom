@@ -1,0 +1,76 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_subscription_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-27 09:33+0000\n"
+"PO-Revision-Date: 2022-09-27 09:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "&amp;nbsp;"
+msgstr "& amp ؛ nbsp ؛"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "<b>Plan Description</b><br/>"
+msgstr "<b> توضیحات برنامه </b> <br/>"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "<b>Plan Duration</b>:The plan has"
+msgstr "<b> مدت زمان برنامه </b>: این طرح"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "<b>Trial Period</b> : This plan has"
+msgstr "<b> دوره آزمایشی </b>: این طرح ارائه شده است"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "<span> No Trial Period.</span>"
+msgstr "<Pan> بدون دوره آزمایشی. </span>"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "Current Month Trial Period"
+msgstr "دوره آزمایشی ماه جاری"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "Plans Informations"
+msgstr "اطلاعات برنامه ریزی"
+
+#. module: sh_subscription_website
+#: model:ir.model,name:sh_subscription_website.model_product_product
+msgid "Product"
+msgstr "تولید - محصول"
+
+#. module: sh_subscription_website
+#: model:ir.model,name:sh_subscription_website.model_product_template
+msgid "Product Template"
+msgstr "الگوی محصول"
+
+#. module: sh_subscription_website
+#: model:product.ribbon,html:sh_subscription_website.sh_subscription_product_ribbon
+msgid "Subscription"
+msgstr "اشتراک، ابونمان"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "Trial period"
+msgstr "دوره آزمایشی"
+
+#. module: sh_subscription_website
+#: model_terms:ir.ui.view,arch_db:sh_subscription_website.sh_product_details_page_with_subscription
+msgid "duration."
+msgstr "مدت زمان."

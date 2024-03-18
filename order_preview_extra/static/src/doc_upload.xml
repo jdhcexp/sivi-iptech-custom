@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="order_preview_extra.doc_upload" owl="1">
+        <div class="mb-3">
+
+            <h3 >Documentos</h3>
+
+            <hr class="mt-0 mb-1"></hr>
+            <input  type="radio" id="nat" name="client_type" t-model="state.type" value="nat" checked="1"/>
+            <label for="nat">Persona Natural</label><br></br>
+            <input  type="radio" id="emp" name="client_type" t-model="state.type"  value="emp" />
+            <label  for="emp">Empresa</label><br></br>
+
+            <br></br>
+             <div id="persona_natural" t-if="state.type == 'nat'">
+
+                 <label for="ccFile" class="form-label">Cedula Frente:</label>
+                 <input class="form-control" type="file" id="ccFile" t-if="!state.hidecc"/>
+                 <h3 t-if="state.hidecc"><t t-esc="state.ccname"/> <span class="badge bg-secondary" >ok</span></h3>
+                 <br></br>
+                 <label for="ccFile" class="form-label">Cedula Respaldo:</label>
+                 <input class="form-control" type="file" id="ccFileBack" t-if="!state.hideccback"/>
+                 <h3 t-if="state.hidecc"><t t-esc="state.ccnameback"/> <span class="badge bg-secondary" >ok</span></h3>
+                 <br></br>
+                 <label for="servFile" class="form-label">Recibo de Servicios Públicos:</label>
+                 <input class="form-control" type="file" id="servFile" t-if="!state.hideserv"/>
+                 <h3 t-if="state.hideserv"><t t-esc="state.servname"/> <span class="badge bg-secondary" >ok</span></h3>
+             </div>
+            <div id="empresa" t-if="state.type=='emp'">
+                <label for="rutFile" class="form-label">Rut:</label>
+                 <input class="form-control" type="file" id="rutFile" t-if="!state.hiderut" />
+                <h3 t-if="state.hiderut"><t t-esc="state.rutname"/> <span class="badge bg-secondary" >ok</span></h3>
+                <br></br>
+                 <label for="camFile" class="form-label">Camara y Comercio:</label>
+                 <input class="form-control" type="file" id="camFile"  t-if="!state.hidecyc"/>
+                <h3 t-if="state.hidecyc"><t t-esc="state.cycname"/> <span class="badge bg-secondary" >ok</span></h3>
+                <br></br>
+                 <label for="ccrFile" class="form-label">Cedula de Representante Legal Frente:</label>
+                 <input class="form-control" type="file" id="ccrFile" t-if="!state.hideccr" />
+                <h3 t-if="state.hideccr"><t t-esc="state.ccrname"/> <span class="badge bg-secondary" >ok</span></h3>
+                <br></br>
+                <label for="ccFile" class="form-label">Cedula de Representante Legal Respaldo:</label>
+                 <input class="form-control" type="file" id="ccrFileBack" t-if="!state.hideccrback"/>
+                 <h3 t-if="state.hidecc"><t t-esc="state.ccrnameback"/> <span class="badge bg-secondary" >ok</span></h3>
+                 <br></br>
+            </div>
+            <div>
+
+
+            </div>
+            <br></br>
+            <button class="btn btn-primary" t-on-click="uploadDoc">subir</button>
+
+        </div>
+    </t>
+
+
+</templates>

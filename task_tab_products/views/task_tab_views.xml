@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ttp_task_tab_tree" model="ir.ui.view">
+        <field name="name">task.tab</field>
+        <field name="model">task.tab</field>
+        <field name="arch" type="xml">
+            <form string="task tab">
+
+                <field name="tab_line" >
+<!--                     <tree name="task products" editable="bottom">-->
+<!--                            <field name="product_id" invisible="1" />-->
+<!--                            <field name="product_template_id"-->
+<!--                                    string="Product"-->
+<!--                                    widget="sol_product_many2one"-->
+<!--                                    >-->
+
+<!--                            </field>-->
+<!--                            <field name="product_template_attribute_value_ids" invisible="1" />-->
+<!--                            <field name="product_custom_attribute_value_ids" invisible="1" >-->
+<!--                                <tree>-->
+<!--                                    <field name="custom_product_template_attribute_value_id" />-->
+<!--                                    <field name="custom_value" />-->
+<!--                                </tree>-->
+<!--                            </field>-->
+<!--                            <field name="product_no_variant_attribute_value_ids" invisible="1" />-->
+<!--                            <field name="is_configurable_product" invisible="1" />-->
+<!--                            <field name="product_uom_qty" invisible="1" />-->
+<!--                            <field name="name"/>-->
+<!--                            -->
+<!--                     </tree>-->
+                </field>
+            </form>
+        </field>
+
+    </record>
+
+    <record id="ttp_task_tab_action" model="ir.actions.act_window">
+        <field name="name">task tab action</field>
+        <field name="res_model">task.tab</field>
+        <field name="view_mode">form</field>
+    </record>
+</odoo>

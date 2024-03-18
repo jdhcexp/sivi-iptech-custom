@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<data>
+
+    <record id="account_sql_report_tree" model="ir.ui.view">
+            <field name="name">account.sql.report.tree</field>
+            <field name="model">account.sql.report.custom</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+
+                    <field name="invoice_partner"/>
+                    <field name="razon_social"/>
+                    <field name="nit"/>
+                    <field name="service"/>
+                    <field name="address"/>
+                    <field name="reference"/>
+                    <field name="comercial"/>
+                    <field name="service_line"/>
+                    <field name="sub_business_line"/>
+                    <field name="client_type"/>
+                    <field name="id_city"/>
+                    <field name="city"/>
+                    <field name="service_type"/>
+                    <field name="total"/>
+                    <field name="payment_date"/>
+
+<!--                    <field name="company_currency_id" invisible="1"/>-->
+
+                   <!-- <field name="date" string="fecha"/>
+                    <field name="name"/>
+                    <field name="partner_id" optional="show"/>
+                    <field name="ref" optional="show"/>
+                    <field name="journal_id"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                    <field name="amount_total_signed" sum="Total Amount" string="Total" decoration-bf="1"/>
+                    <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'posted'"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="to_check" optional="hide" widget="boolean_toggle"/>-->
+                </tree>
+            </field>
+        </record>
+
+    <record id="action_account_report" model="ir.actions.act_window">
+            <field name="name">Chart of Accounts</field>
+            <field name="res_model">account.sql.report.custom</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+    <menuitem id="siesa_reporting" name="Siesa" parent="account.menu_finance" action="action_account_report" sequence="10"/>
+    </data>
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+iptech_account_reporting.access_account_move,access_account_move,iptech_account_reporting.model_account_move,base.group_user,1,1,1,1
+iptech_account_reporting.access_account_sql_report_custom,access_account_sql_report_custom,iptech_account_reporting.model_account_sql_report_custom,base.group_user,1,1,1,1

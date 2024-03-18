@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+<t t-name="order_preview_extra.sign_name_and_signature" t-extend="web.sign_name_and_signature">
+    <p>aslknd aksdnkasjn dkasndka</p>
+</t>
+
+</templates>

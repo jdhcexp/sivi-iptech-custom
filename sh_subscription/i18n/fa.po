@@ -1,0 +1,1772 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sh_subscription
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-27 09:33+0000\n"
+"PO-Revision-Date: 2022-09-27 09:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "&amp;times;"
+msgstr "& amp ؛ times ؛"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "--Select Reason--"
+msgstr "-دلیل انتخابی-"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "<b style=\"color: black;\">Number Of Billing Cycles: </b>"
+msgstr "<b style = \ "رنگ: سیاه ؛ \"> تعداد چرخه صورتحساب: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "<b style=\"color: black;\">Price: </b>"
+msgstr "<b style = \ "رنگ: سیاه ؛ \"> قیمت: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "<b style=\"color: black;\">Trial Period: </b>"
+msgstr "<b style = \ "رنگ: سیاه ؛ \"> دوره آزمایشی: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>Date of Next Payment :</b>"
+msgstr "<b> تاریخ پرداخت بعدی: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>End Date :</b>"
+msgstr "<b> تاریخ پایان: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>No. of Billing cycle :</b>"
+msgstr "<b> نه. چرخه صورتحساب: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>Plan Price :</b>"
+msgstr "<b> قیمت برنامه: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>Recurrency :</b>"
+msgstr "<b> عود: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>Start Date :</b>"
+msgstr "<b> تاریخ شروع: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>Subscription Plan :</b>"
+msgstr "<b> برنامه اشتراک: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<b>Trial Period :</b>"
+msgstr "<b> دوره آزمایشی: </b>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid ""
+"<br/>\n"
+"\t\t\t            \t<span style=\"padding: 10px;\" class=\"badge badge-danger\">Cancelled</span>"
+msgstr ""
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid ""
+"<br/>\n"
+"\t\t\t            \t<span style=\"padding: 10px;\" class=\"badge badge-danger\">Expired</span>"
+msgstr ""
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid ""
+"<br/>\n"
+"\t\t\t            \t<span style=\"padding: 10px;\" class=\"badge badge-dark\">Waiting</span>"
+msgstr ""
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid ""
+"<br/>\n"
+"\t\t\t            \t<span style=\"padding: 10px;\" class=\"badge badge-info\">Renewed</span>"
+msgstr ""
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid ""
+"<br/>\n"
+"\t\t\t            \t<span style=\"padding: 10px;\" class=\"badge badge-primary\">Closed</span>"
+msgstr ""
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid ""
+"<br/>\n"
+"\t\t\t            \t<span style=\"padding: 10px;\" class=\"badge badge-success\">Active</span>"
+msgstr ""
+
+
+#. module: sh_subscription
+#: model:mail.template,body_html:sh_subscription.sh_subscription_customer_email
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t        <table border=\"0\" width=\"100%\" cellpadding=\"0\" bgcolor=\"#ededed\" style=\"padding: 20px; background-color: #ededed; border-collapse:separate;\">\n"
+"\t          <tbody>\n"
+"\t\n"
+"\t            <!-- HEADER -->\n"
+"\t            <tr>\n"
+"\t              <td align=\"center\" style=\"min-width: 590px;\">\n"
+"\t                <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"\t                  <tr>\n"
+"\t                    <td valign=\"middle\">\n"
+"\t                      <span style=\"font-size:20px; color:white; font-weight: bold;\">\n"
+"\t                        <strong>\n"
+"\t                          \n"
+"\t                          <t t-out=\"object.name\"/>\n"
+"\t                          \n"
+"\t                        </strong>\n"
+"\t                      </span>\n"
+"\t                    </td>\n"
+"\t                    <td valign=\"middle\" align=\"right\">\n"
+"\t                      <img src=\"/logo.png?company={{object.sh_company_id.id}}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"{{object.sh_company_id.name}}\"/>\n"
+"\t                    </td>\n"
+"\t                  </tr>\n"
+"\t                </table>\n"
+"\t              </td>\n"
+"\t            </tr>\n"
+"\t\n"
+"\t            <!-- CONTENT -->\n"
+"\t            <tr>\n"
+"\t              <td align=\"center\" style=\"min-width: 590px;\">\n"
+"\t                <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#ffffff\" style=\"min-width: 590px; background-color: rgb(255, 255, 255); padding: 20px; border-collapse:separate;\">\n"
+"\t                  <tbody>\n"
+"\t                    <td valign=\"top\" style=\"font-family:Arial,Helvetica,sans-serif; color: #555; font-size: 14px;\">\n"
+"\t                      <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t                        Dear\n"
+"\t                        <b><t t-out=\"object.sh_partner_id.name\"/></b>\n"
+"\t                        <br/>\n"
+"\t                        <br/>\n"
+"\t                        <t t-if=\"object.state == 'in_progress' and object.sh_renewed == True\">\n"
+"\t\t\t\t\t\t\t\t<!-- <t t-if=\"object.sh_renewed == True\"> -->\n"
+"\t\t\t\t\t\t\t\t\tYour subscription <b><t t-out=\"object.name\"/></b> is renewed.\n"
+"\t\t\t\t\t\t\t\t<!-- </t> -->\n"
+"\t\t\t\t\t\t\t</t>\n"
+"\t\t\t\t\t\t\t<t t-else=\"\">\n"
+"\t\t\t\t\t\t\t\tYour subscription <b><t t-out=\"object.name\"/></b> is activated.\n"
+"\t\t\t\t\t\t\t</t>\n"
+"\t\t                    \n"
+"\t\t                    <t t-if=\"object.state == 'renewed'\">\n"
+"\t\t                        Your subscription <b><t t-out=\"object.name\"/></b> has been renewed.\n"
+"\t\t                    </t>\n"
+"\t\t                    <t t-if=\"object.state == 'expire'\">\n"
+"\t\t                        Your subscription <b><t t-out=\"object.name\"/></b> has been expired.\n"
+"\t\t                    </t>\n"
+"\t\t                    <t t-if=\"object.state == 'cancel'\">\n"
+"\t\t                        Your subscription <b><t t-out=\"object.name\"/></b> has been cancelled.\n"
+"\t\t                    </t>\n"
+"\t\t                    <t t-if=\"object.state == 'close'\">\n"
+"\t\t                        Your subscription <b><t t-out=\"object.name\"/></b> has been closed.\n"
+"\t\t                    </t>\n"
+"\t\t                    <br/>\n"
+"\t\t                    <br/>\n"
+"\t\t                    <t t-if=\"object.sh_end_date\">\n"
+"\t\t                    \tYour plan will expire on <b><t t-out=\"object.sh_end_date\"/></b>\n"
+"\t\t                    </t>\n"
+"\t                        <br/>\n"
+"\t                        <br/>\n"
+"\t                        If you have any questions then feel free to contact us.\n"
+"\t                        <br/>\n"
+"\t                        Thank you...\n"
+"\t                      </p>\n"
+"\t                    </td>\n"
+"\t                  </tbody>\n"
+"\t                </table>\n"
+"\t              </td>\n"
+"\t            </tr>\n"
+"\t\n"
+"\t            <!-- FOOTER -->\n"
+"\t            <tr>\n"
+"\t              <td align=\"center\" style=\"min-width: 590px;\">\n"
+"\t                <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"\t                  <tr>\n"
+"\t                    <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"\t                      <t t-out=\"object.sh_company_id.name\"/>\n"
+"\t                      <br/>\n"
+"\t                      <t t-out=\"object.sh_company_id.phone or ''\"/>\n"
+"\t                    </td>\n"
+"\t                    <td valign=\"middle\" align=\"right\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"\t                      <t t-if=\"object.sh_company_id.email\">\n"
+"\t                        <a t-attf-href=\"mailto:{{ object.sh_company_id.email }}\" style=\"text-decoration:none; color: white;\"><t t-out=\"object.sh_company_id.email\"/></a>\n"
+"\t                        <br/>\n"
+"\t                      </t>\n"
+"\t                      <t t-if=\"object.sh_company_id.website\">\n"
+"\t                        <a t-attf-href=\"{{object.sh_company_id.website}}\" style=\"text-decoration:none; color: white;\">\n"
+"\t                          <t t-out=\"object.sh_company_id.website\"/>\n"
+"\t                        </a>\n"
+"\t                      </t>\n"
+"\t                    </td>\n"
+"\t                  </tr>\n"
+"\t                </table>\n"
+"\t              </td>\n"
+"\t            </tr>\n"
+"\t          </tbody>\n"
+"\t        </table>\n"
+"\t      </div>\n"
+"\t    "
+msgstr ""
+
+#. module: sh_subscription
+#: model:mail.template,body_html:sh_subscription.sh_subscription_customer_email_expire_notify
+msgid ""
+"<div style=\"margin: 0px; padding: 0px;\">\n"
+"\t        <table border=\"0\" width=\"100%\" cellpadding=\"0\" bgcolor=\"#ededed\" style=\"padding: 20px; background-color: #ededed; border-collapse:separate;\">\n"
+"\t          <tbody>\n"
+"\t\n"
+"\t            <!-- HEADER -->\n"
+"\t            <tr>\n"
+"\t              <td align=\"center\" style=\"min-width: 590px;\">\n"
+"\t                <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"\t                  <tr>\n"
+"\t                    <td valign=\"middle\">\n"
+"\t                      <span style=\"font-size:20px; color:white; font-weight: bold;\">\n"
+"\t                        <strong>\n"
+"\t                          \n"
+"\t                          <t t-out=\"object.name\"/>\n"
+"\t                          \n"
+"\t                        </strong>\n"
+"\t                      </span>\n"
+"\t                    </td>\n"
+"\t                    <td valign=\"middle\" align=\"right\">\n"
+"\t                      <img src=\"/logo.png?company={{object.sh_company_id.id}}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"{{object.sh_company_id.name}}\"/>\n"
+"\t                    </td>\n"
+"\t                  </tr>\n"
+"\t                </table>\n"
+"\t              </td>\n"
+"\t            </tr>\n"
+"\t\n"
+"\t            <!-- CONTENT -->\n"
+"\t            <tr>\n"
+"\t              <td align=\"center\" style=\"min-width: 590px;\">\n"
+"\t                <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#ffffff\" style=\"min-width: 590px; background-color: rgb(255, 255, 255); padding: 20px; border-collapse:separate;\">\n"
+"\t                  <tbody>\n"
+"\t                    <td valign=\"top\" style=\"font-family:Arial,Helvetica,sans-serif; color: #555; font-size: 14px;\">\n"
+"\t                      <p style=\"margin: 0px; padding: 0px; font-size: 13px;\">\n"
+"\t                        Dear\n"
+"\t                        <b><t t-out=\"object.sh_partner_id.name\"/></b>\n"
+"\t                        <br/>\n"
+"\t                        <br/>\n"
+"\t                        Your Subscription <b><t t-out=\"object.name\"/></b> Will be expired in Expire Soon...\n"
+"\t                        <br/>\n"
+"\t                        <br/>\n"
+"\t                        Last Date of your subscription is <b><t t-out=\"object.sh_end_date\"/></b>\n"
+"\t                        \n"
+"\t                        <br/>\n"
+"\t                        <br/>\n"
+"\t                        Please renew your subscription as soon as possible.\n"
+"\t                        <br/>\n"
+"\t                        <br/>\n"
+"\t                        If you have any questions then feel free to contact us.\n"
+"\t                        <br/>\n"
+"\t                        Thank you...\n"
+"\t                      </p>\n"
+"\t                    </td>\n"
+"\t                  </tbody>\n"
+"\t                </table>\n"
+"\t              </td>\n"
+"\t            </tr>\n"
+"\t\n"
+"\t            <!-- FOOTER -->\n"
+"\t            <tr>\n"
+"\t              <td align=\"center\" style=\"min-width: 590px;\">\n"
+"\t                <table width=\"590\" border=\"0\" cellpadding=\"0\" bgcolor=\"#875A7B\" style=\"min-width: 590px; background-color: rgb(135,90,123); padding: 20px; border-collapse:separate;\">\n"
+"\t                  <tr>\n"
+"\t                    <td valign=\"middle\" align=\"left\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"\t                      <t t-out=\"object.sh_company_id.name\"/>\n"
+"\t                      <br/>\n"
+"\t                      <t t-out=\"object.sh_company_id.phone or ''\"/>\n"
+"\t                    </td>\n"
+"\t                    <td valign=\"middle\" align=\"right\" style=\"color: #fff; padding-top: 10px; padding-bottom: 10px; font-size: 12px;\">\n"
+"\t                      <t t-if=\"object.sh_company_id.email\">\n"
+"\t                        <a t-attf-href=\"mailto:{{ object.sh_company_id.email }}\" style=\"text-decoration:none; color: white;\"><t t-out=\"object.sh_company_id.email\"/></a>\n"
+"\t                        <br/>\n"
+"\t                      </t>\n"
+"\t                      <t t-if=\"object.sh_company_id.website\">\n"
+"\t                        <a t-attf-href=\"{{object.sh_company_id.website}}\" style=\"text-decoration:none; color: white;\">\n"
+"\t                          <t t-out=\"object.sh_company_id.website\"/>\n"
+"\t                        </a>\n"
+"\t                      </t>\n"
+"\t                    </td>\n"
+"\t                  </tr>\n"
+"\t                </table>\n"
+"\t              </td>\n"
+"\t            </tr>\n"
+"\t          </tbody>\n"
+"\t        </table>\n"
+"\t      </div>\n"
+"\t    "
+msgstr ""
+
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "<span style=\"padding: 10px;\" class=\"badge badge-danger\">Cancelled</span>"
+msgstr "<span style = \ "padding: 10px ؛ \" class = \ "نشان نشان نشان \"> لغو شده </span>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "<span style=\"padding: 10px;\" class=\"badge badge-danger\">Expired</span>"
+msgstr "<span style = \ "padding: 10px ؛ \" class = \ "نشان نشان نشان \"> منقضی شده </span>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "<span style=\"padding: 10px;\" class=\"badge badge-dark\">Waiting</span>"
+msgstr "<span style = \ "padding: 10px ؛ \" class = \ "badge badge-dark \"> انتظار </span>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "<span style=\"padding: 10px;\" class=\"badge badge-info\">Renewed</span>"
+msgstr "<span style = \ "padding: 10px ؛ \" class = \ "نشان نشان-اینوفو \"> تجدید </span>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "<span style=\"padding: 10px;\" class=\"badge badge-primary\">Finished</span>"
+msgstr "<span style = \ "padding: 10px ؛ \" class = \ "badge badge-primary \"> به پایان رسید </span>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "<span style=\"padding: 10px;\" class=\"badge badge-success\">Active</span>"
+msgstr "<span style = \ "padding: 10px ؛ \" class = \ "badge badge-success \"> فعال </span>"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "<span>Your Subscription is in Never Expire Mode.</span>"
+msgstr "<span> اشتراک شما در حالت منقضی نشده است. </span>"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_needaction
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_needaction
+msgid "Action Needed"
+msgstr "عمل مورد نیاز"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__active
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__active
+msgid "Active"
+msgstr "فعال"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_ids
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_ids
+msgid "Activities"
+msgstr "فعالیت ها"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_exception_decoration
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "دکوراسیون استثناء فعالیت"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_state
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_state
+msgid "Activity State"
+msgstr "حالت فعالیت"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_type_icon
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "نماد نوع فعالیت"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_product_view
+msgid "Add Product"
+msgstr "محصول را اضافه کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_sale_order_view_form
+msgid "Add Subscription Product"
+msgstr "محصول اشتراک را اضافه کنید"
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/controllers/portal.py:0
+#, python-format
+msgid "All"
+msgstr "همه"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_amount_due
+msgid "Amount Due"
+msgstr "مبلغ"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Amount Due Payment in Subscription"
+msgstr "مبلغ پرداخت در اشتراک"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Amount Paid Payment in Subscription"
+msgstr "مبلغ پرداخت پرداخت شده در اشتراک"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_attachment_count
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_attachment_count
+msgid "Attachment Count"
+msgstr "تعداد پیوست"
+
+#. module: sh_subscription
+#: model:ir.actions.server,name:sh_subscription.sh_ir_cron_subscription_auto_expired_ir_actions_server
+#: model:ir.cron,cron_name:sh_subscription.sh_ir_cron_subscription_auto_expired
+#: model:ir.cron,name:sh_subscription.sh_ir_cron_subscription_auto_expired
+msgid "Auto Expired Subscription"
+msgstr "اشتراک خودکار منقضی شده"
+
+#. module: sh_subscription
+#: model:ir.actions.server,name:sh_subscription.sh_ir_cron_subscription_auto_invoice_ir_actions_server
+#: model:ir.cron,cron_name:sh_subscription.sh_ir_cron_subscription_auto_invoice
+#: model:ir.cron,name:sh_subscription.sh_ir_cron_subscription_auto_invoice
+msgid "Auto Invoice Of Active Subscription"
+msgstr "فاکتور خودکار اشتراک فعال"
+
+#. module: sh_subscription
+#: model:ir.actions.server,name:sh_subscription.sh_ir_cron_subscription_auto_reminder_ir_actions_server
+#: model:ir.cron,cron_name:sh_subscription.sh_ir_cron_subscription_auto_reminder
+#: model:ir.cron,name:sh_subscription.sh_ir_cron_subscription_auto_reminder
+msgid "Auto Reminder Subscription"
+msgstr "اشتراک یادآوری خودکار"
+
+#. module: sh_subscription
+#: model:ir.actions.server,name:sh_subscription.sh_ir_cron_subscription_auto_renew_button_ir_actions_server
+#: model:ir.cron,cron_name:sh_subscription.sh_ir_cron_subscription_auto_renew_button
+#: model:ir.cron,name:sh_subscription.sh_ir_cron_subscription_auto_renew_button
+msgid "Auto Renew Button visible Subscription"
+msgstr "دکمه تجدید خودکار اشتراک قابل مشاهده"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_billing_day_of_the_month
+msgid "Billing day of the month"
+msgstr "روز صورتحساب ماه"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_cancle_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Cancel"
+msgstr "لغو کردن"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Cancel Now"
+msgstr "اکنون لغو کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Cancel Subscription"
+msgstr "لغو عضویت"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_cancle_view
+msgid "Cancel/Close Now"
+msgstr "اکنون لغو/بستن"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_reason
+msgid "Cancel/Close Reason"
+msgstr "لغو/دلیل نزدیک"
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__state__cancel
+#, python-format
+msgid "Cancelled"
+msgstr "لغو شد"
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_cancle_wizard_action
+msgid "Cancle/Close Wizard"
+msgstr "جادوگر/نزدیک"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_product_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_renewed_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Close"
+msgstr "نزدیک"
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/controllers/portal.py:0
+#, python-format
+msgid "Closed"
+msgstr "بسته"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__color
+msgid "Color Index"
+msgstr "شاخص رنگ"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_res_company
+msgid "Companies"
+msgstr "شرکت"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__company_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__company_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_company_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard__sh_company_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_company_id
+msgid "Company"
+msgstr "شرکت"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_res_config_settings
+msgid "Config Settings"
+msgstr "تنظیمات پیکربندی"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Confirm"
+msgstr "تایید"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__create_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__create_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__create_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard__create_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__create_uid
+msgid "Created by"
+msgstr "خلق شده توسط"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__create_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__create_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__create_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard__create_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__create_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard__create_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__create_date
+msgid "Created on"
+msgstr "ایجاد شده در"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__currency_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__currency_id
+msgid "Currency"
+msgstr "واحد پول"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_report_search
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Customer"
+msgstr "مشتری"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Customer Information"
+msgstr "اطلاعات مشتری"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_partner_invoice_id
+msgid "Customer Invoice Address"
+msgstr "آدرس فاکتور مشتری"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_report__sh_partner_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_partner_id
+msgid "Customer Name"
+msgstr "نام مشتری"
+
+#. module: sh_subscription
+#: model:product.attribute.value,name:sh_subscription.product_attribute_subscription_value_daily
+msgid "Daily"
+msgstr "روزانه"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_date_of_next_payment
+msgid "Date Of Next Payment"
+msgstr "تاریخ پرداخت بعدی"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Date of Next Payment"
+msgstr "تاریخ پرداخت بعدی"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_reminder_template__sh_reminder_unit__days(s)
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_trial_unit__day
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_unit__day
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_trial_unit__day
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_unit__day
+msgid "Day(s)"
+msgstr "روزها)"
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/models/sh_subscription_subscription.py:0
+#: code:addons/sh_subscription/models/sh_subscription_subscription.py:0
+#: code:addons/sh_subscription/models/sh_subscription_subscription.py:0
+#, python-format
+msgid "Default Journal not found."
+msgstr "ژورنال پیش فرض یافت نشد."
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "Delete"
+msgstr "حذف"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__sh_description
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_description
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Description"
+msgstr "شرح"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__display_name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__display_name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__display_name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard__display_name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__display_name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard__display_name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_report__display_name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__display_name
+msgid "Display Name"
+msgstr "نام نمایش"
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:sh_subscription.selection__res_company__sh_invoice_generated__draft
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__state__draft
+#, python-format
+msgid "Draft"
+msgstr "پیش نویس"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "Dropdown menu"
+msgstr "منوی کشویی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_duration
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+msgid "Duration"
+msgstr "مدت زمان"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "Edit"
+msgstr "ویرایش کردن"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_end_date
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "End Date"
+msgstr "تاریخ پایان"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+msgid "Enter Your Name...."
+msgstr "اسمت را وارد کن...."
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__state__expire
+#, python-format
+msgid "Expired"
+msgstr "منقضی شده"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__state__close
+msgid "Finished"
+msgstr "تمام شده"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_follower_ids
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_follower_ids
+msgid "Followers"
+msgstr "پیروان"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_partner_ids
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "پیروان (شرکا)"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__activity_type_icon
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "آیکون عالی فونت به عنوان مثال دست و پنجه نرم"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Free for Current Month"
+msgstr "رایگان برای ماه جاری"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_free_trial_for_current_month
+msgid "Free trial for current month"
+msgstr "آزمایش رایگان برای ماه جاری"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Generate Invoice"
+msgstr "فاکتور تولید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.res_config_settings_view_form
+msgid "Give Trial to one time"
+msgstr "یک بار محاکمه کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_report_search
+msgid "Group By"
+msgstr "دسته بندی بر اساس"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_reason_search_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Group by..."
+msgstr "دسته بندی بر اساس..."
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__has_message
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__has_message
+msgid "Has Message"
+msgstr "پیام دارد"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard__id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard__id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_report__id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__id
+msgid "ID"
+msgstr "شناسه"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_exception_icon
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_exception_icon
+msgid "Icon"
+msgstr "آیکون"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__activity_exception_icon
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "نماد برای نشان دادن یک فعالیت استثنا."
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__message_needaction
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__message_unread
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__message_needaction
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "در صورت بررسی ، پیام های جدید به توجه شما نیاز دارند."
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__message_has_error
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__message_has_sms_error
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__message_has_error
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "در صورت بررسی ، برخی از پیام ها خطای تحویل دارند."
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/controllers/portal.py:0
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__state__in_progress
+#, python-format
+msgid "In Progress"
+msgstr "در حال پیش رفت"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_res_company__sh_invoice_email
+#: model:ir.model.fields,field_description:sh_subscription.field_res_config_settings__sh_invoice_email
+msgid "Invoice Email"
+msgstr "ایمیل فاکتور"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_res_company__sh_invoice_generated
+#: model:ir.model.fields,field_description:sh_subscription.field_res_config_settings__sh_invoice_generated
+msgid "Invoice Generated"
+msgstr "فاکتور تولید شده"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_last_payment_status
+msgid "Invoice Status"
+msgstr "وضعیت فاکتور"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Invoices"
+msgstr "فاکتورها"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_is_close_by_customer
+msgid "Is Closable By Customer"
+msgstr "توسط مشتری قابل بسته شدن است"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_is_follower
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_is_follower
+msgid "Is Follower"
+msgstr "پیرو است"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_product_product__sh_product_subscribe
+#: model:ir.model.fields,field_description:sh_subscription.field_product_template__sh_product_subscribe
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_product_product_view_form
+msgid "Is Subscription Type"
+msgstr "نوع اشتراک است"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_account_move
+msgid "Journal Entry"
+msgstr "مطلب ثبت شده در روزنامه، قلم روزنامه، دفتر روزنامه"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template____last_update
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard____last_update
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan____last_update
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard____last_update
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason____last_update
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard____last_update
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_report____last_update
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription____last_update
+msgid "Last Modified on"
+msgstr "آخرین اصلاح شده در"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__write_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__write_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__write_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard__write_uid
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__write_uid
+msgid "Last Updated by"
+msgstr "آخرین به روز شده توسط"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__write_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__write_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__write_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard__write_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__write_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_renewed_wizard__write_date
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__write_date
+msgid "Last Updated on"
+msgstr "آخرین بروز رسانی در تاریخ"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__sh_mail_template_id
+msgid "Mail Template"
+msgstr "الگوی پستی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_main_attachment_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "ضمیمه اصلی"
+
+#. module: sh_subscription
+#: model:res.groups,name:sh_subscription.group_manager_sh_subscription
+msgid "Manager"
+msgstr "مدیر"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_source__manual
+msgid "Manual"
+msgstr "کتابچه راهنمای"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_renewed_view
+msgid "Message"
+msgstr "پیام"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_has_error
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_has_error
+msgid "Message Delivery error"
+msgstr "خطای تحویل پیام"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_ids
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_ids
+msgid "Messages"
+msgstr "پیام ها"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_reminder_template__sh_reminder_unit__month(s)
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_trial_unit__month
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_unit__month
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_trial_unit__month
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_unit__month
+msgid "Month(s)"
+msgstr "ماه ها)"
+
+#. module: sh_subscription
+#: model:product.attribute.value,name:sh_subscription.product_attribute_subscription_value_monthly
+msgid "Monthly"
+msgstr "ماهانه"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_report__sh_month_price
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_recurring_monthly
+msgid "Monthly Recurring Revenue"
+msgstr "درآمد مکرر ماهانه"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__my_activity_date_deadline
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "مهلت فعالیت من"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__name
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__name
+msgid "Name"
+msgstr "نام"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_never_expire
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Never Expire"
+msgstr "هرگز منقضی نشود"
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/models/sh_subscription_subscription.py:0
+#: code:addons/sh_subscription/models/sh_subscription_subscription.py:0
+#, python-format
+msgid "New"
+msgstr "جدید"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_date_deadline
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "مهلت فعالیت بعدی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_summary
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_summary
+msgid "Next Activity Summary"
+msgstr "خلاصه فعالیت بعدی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_type_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع فعالیت بعدی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_no_of_billing_cycle
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_no_of_billing_cycle
+msgid "No of billing cycle"
+msgstr "هیچ چرخه صورتحساب"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_renew_stage__not_time_to_renew
+msgid "Not Time TO Renew"
+msgstr "وقت تجدید نیست"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Number Of Billing Cycle"
+msgstr "تعداد چرخه صورتحساب"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "Number Of Billing Cycles"
+msgstr "تعداد چرخه صورتحساب"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_needaction_counter
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_needaction_counter
+msgid "Number of Actions"
+msgstr "تعداد اقدامات"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_has_error_counter
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_has_error_counter
+msgid "Number of errors"
+msgstr "تعداد خطاها"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__message_needaction_counter
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "تعداد پیام هایی که نیاز به یک عمل دارند"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__message_has_error_counter
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "تعداد پیام ها با خطای تحویل"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__message_unread_counter
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__message_unread_counter
+msgid "Number of unread messages"
+msgstr "تعداد پیام های خوانده نشده"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_renewed_view
+msgid "Ok"
+msgstr "خوب"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_order_ref_id
+msgid "Order Ref"
+msgstr "سفارش"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "Order Status"
+msgstr "وضعیت سفارش"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_override_product
+msgid "Override Product Price"
+msgstr "قیمت محصول را نادیده بگیرید"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__res_company__sh_invoice_generated__paid
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_last_payment_status__paid
+msgid "Paid"
+msgstr "پرداخت شده"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_res_company__sh_paid_subscription_journal
+#: model:ir.model.fields,field_description:sh_subscription.field_res_config_settings__sh_paid_subscription_journal
+#: model_terms:ir.ui.view,arch_db:sh_subscription.res_config_settings_view_form
+msgid "Paid Payment Journal"
+msgstr "مجله پرداخت پرداخت شده"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Paid Subscription"
+msgstr "اشتراک پرداخت شده"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Payment Information"
+msgstr "اطلاعات پرداخت"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_res_company__sh_journal_id
+#: model:ir.model.fields,field_description:sh_subscription.field_res_config_settings__sh_journal_id
+msgid "Payment Method"
+msgstr "روش پرداخت"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan Free Trial For Month"
+msgstr "برنامه آزمایشی رایگان را برای ماه برنامه ریزی کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Plan Information"
+msgstr "اطلاعات برنامه ریزی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__name
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+msgid "Plan Name"
+msgstr "نام برنامه"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan Never Expire"
+msgstr "برنامه هرگز منقضی نمی شود"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan Price"
+msgstr "قیمت برنامه ریزی"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Plan Price Greter than 10000"
+msgstr "قیمت گذاری قیمت بیش از 10000"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Plan Product Quantity"
+msgstr "تعیین مقدار محصول"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Plan Source equal to Manual"
+msgstr "منبع برنامه برابر با کتابچه راهنما"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Plan Source equal to Sale Order"
+msgstr "منبع برنامه برابر با سفارش فروش"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan Start Immediately"
+msgstr "برنامه بلافاصله شروع کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan Trial Period"
+msgstr "دوره آزمایشی برنامه ریزی"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Plan Trial Unit"
+msgstr "واحد آزمایشی برنامه"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_trial
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_trial
+msgid "Plan has trial period"
+msgstr "برنامه دارای دوره آزمایشی است"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan price Greter than 5"
+msgstr "قیمت گذاری قیمت بیش از 5"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan with Free Trial For Month"
+msgstr "با محاکمه رایگان برای ماه برنامه ریزی کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Plan with Trial Period"
+msgstr "با دوره آزمایشی برنامه ریزی کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_cancle_view
+msgid "Please mention your reason why you do this."
+msgstr "لطفا دلیل خود را که چرا این کار را انجام می دهید ذکر کنید."
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__res_company__sh_invoice_generated__post
+msgid "Post"
+msgstr "پست"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_plan_price
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_plan_price
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+msgid "Price"
+msgstr "قیمت"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_product_product
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_product_count
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_product_wizard__sh_product_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__product_id
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_product_view
+msgid "Product"
+msgstr "تولید - محصول"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_res_company__sh_default_attribute_id
+#: model:ir.model.fields,field_description:sh_subscription.field_res_config_settings__sh_default_attribute_id
+#: model_terms:ir.ui.view,arch_db:sh_subscription.res_config_settings_view_form
+msgid "Product Attribute"
+msgstr "ویژگی محصول"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Product Information"
+msgstr "اطلاعات محصول"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+msgid "Product Related Detail"
+msgstr "جزئیات مربوط به محصول"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_product_template
+msgid "Product Template"
+msgstr "الگوی محصول"
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_product_wizard_action
+msgid "Product Wizard"
+msgstr "جادوگر محصول"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_qty
+msgid "Quantity"
+msgstr "تعداد"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_cancle_wizard__sh_subscription_reason_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__name
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_cancle_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_product_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_renewed_view
+msgid "Reason"
+msgstr "دلیل"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_recurrency
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Recurrency"
+msgstr "عود"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__sh_reminder
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_reminder
+msgid "Reminder"
+msgstr "یادآور"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_reminder_template__sh_reminder_unit
+msgid "Reminder Unit"
+msgstr "واحد یادآوری"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Renew"
+msgstr "تمدید کردن"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_renew_stage
+msgid "Renew State"
+msgstr "حالت تجدید"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_res_company__sh_renewal_days
+#: model:ir.model.fields,field_description:sh_subscription.field_res_config_settings__sh_renewal_days
+msgid "Renewal days"
+msgstr "روزهای تجدید"
+
+#. module: sh_subscription
+#: code:addons/sh_subscription/controllers/portal.py:0
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_renewed
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__state__renewed
+#, python-format
+msgid "Renewed"
+msgstr "تمدید شده"
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_renewed_wizard_action
+msgid "Renewed Reason Wizard"
+msgstr "جادوگر دلیل تجدید شده"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__activity_user_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__activity_user_id
+msgid "Responsible User"
+msgstr "کاربر مسئول"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_has_sms_error
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطای تحویل پیام کوتاه"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_sale_order
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_source__sales_order
+msgid "Sales Order"
+msgstr "سفارش فروش"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_report__sh_sale_person
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_report_search
+msgid "Sales Person"
+msgstr "شخص فروش"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Send Message And Attachments"
+msgstr "ارسال پیام و پیوست"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_reason__sequence
+msgid "Sequence"
+msgstr "توالی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_source
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Source"
+msgstr "منبع"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_start_date
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Start Date"
+msgstr "تاریخ شروع"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_start_immediately
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Start Immediately"
+msgstr "بلافاصله شروع کنید"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__state
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "State"
+msgstr "دولت"
+
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__activity_state
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_product_variant_easy_edit_view
+msgid "Subcription Details"
+msgstr "جزئیات زیرنویس"
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_subscription_action
+#: model:ir.model.fields,field_description:sh_subscription.field_sale_order__sh_subscription_count
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_subscription_count
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_invoice_count
+#: model:ir.ui.menu,name:sh_subscription.sh_subscription_subscription_menu
+#: model:product.attribute,name:sh_subscription.product_attribute_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.res_config_settings_view_form
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_sale_order_view_form
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Subscription"
+msgstr "اشتراک، ابونمان"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_sh_subscription_cancle_wizard
+msgid "Subscription Cancle/close Wizard"
+msgstr "اشتراک Cancle/Close Wizard"
+
+#. module: sh_subscription
+#: model:ir.module.category,name:sh_subscription.module_category_sh_subscription
+msgid "Subscription Category"
+msgstr "دسته اشتراک"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_subscription_id
+msgid "Subscription Id"
+msgstr "شناسه اشتراک"
+
+#. module: sh_subscription
+#: model:ir.ui.menu,name:sh_subscription.sh_subscription_main_menu
+msgid "Subscription Information"
+msgstr "اطلاعات اشتراک"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Subscription Last Payment Status"
+msgstr "اشتراک آخرین وضعیت پرداخت"
+
+#. module: sh_subscription
+#: model:ir.module.category,description:sh_subscription.module_category_sh_subscription
+msgid "Subscription Management"
+msgstr "مدیریت اشتراک"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_sh_subscription_plan
+#: model:ir.model.fields,field_description:sh_subscription.field_product_product__sh_subscription_plan_id
+#: model:ir.model.fields,field_description:sh_subscription.field_product_template__sh_subscription_plan_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_report__sh_subscription_plan_id
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_subscription_plan_id
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_report_search
+msgid "Subscription Plan"
+msgstr "برنامه اشتراک"
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_plan_action
+#: model:ir.ui.menu,name:sh_subscription.sh_subscription_plan_menu
+msgid "Subscription Plans"
+msgstr "برنامه های اشتراک"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_sh_subscription_product_wizard
+msgid "Subscription Product Wizard"
+msgstr "محصول اشتراک محصول"
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_reason_action
+#: model:ir.model,name:sh_subscription.model_sh_subscription_reason
+#: model:ir.ui.menu,name:sh_subscription.sh_subscription_reason_menu
+msgid "Subscription Reason"
+msgstr "دلیل اشتراک"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_subscription_ref
+msgid "Subscription Reference"
+msgstr "مرجع اشتراک"
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_reminder_template_action
+#: model:ir.model,name:sh_subscription.model_sh_reminder_template
+#: model:ir.ui.menu,name:sh_subscription.sh_subscription_reminder_template_menu
+msgid "Subscription Reminder"
+msgstr "یادآوری اشتراک"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_sh_subscription_renewed_wizard
+msgid "Subscription Renewed Wizard"
+msgstr "اشتراک جادوگر تازه"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_renewed_view
+msgid "Subscription Renewed."
+msgstr "اشتراک تجدید شد."
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.sh_subscription_report_report_action
+#: model:ir.ui.menu,name:sh_subscription.sh_subscription_report_menu
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_report_report_graph
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_report_report_pivot
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_report_search
+msgid "Subscription Report"
+msgstr "گزارش اشتراک"
+
+#. module: sh_subscription
+#: model:mail.template,name:sh_subscription.sh_subscription_customer_email_expire_notify
+msgid "Subscription is about to expire"
+msgstr "اشتراک در حال انقضا است"
+
+#. module: sh_subscription
+#: model:mail.template,name:sh_subscription.sh_subscription_customer_email
+msgid "Subscription is active"
+msgstr "اشتراک فعال است"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_sh_subscription_subscription
+msgid "Subscription subscription"
+msgstr "اشتراک اشتراک"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subsciption_portal_my_home_menu
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_my_home
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_tree_view
+msgid "Subscriptions"
+msgstr "اشتراک"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_taxes_ids
+msgid "Taxes"
+msgstr "مالیات"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "There are currently no Subscriptions for your account."
+msgstr "در حال حاضر هیچ اشتراک برای حساب شما وجود ندارد."
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_renew_stage__time_to_renew
+msgid "Time TO Renew"
+msgstr "زمان تجدید"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_trial_end_date
+msgid "Trial End Date"
+msgstr "تاریخ پایان دادگاه"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_kanban_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Trial Period"
+msgstr "دوره آزمایشی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_res_company__sh_trial_period_setting
+#: model:ir.model.fields,field_description:sh_subscription.field_res_config_settings__sh_trial_period_setting
+msgid "Trial Period Setting"
+msgstr "تنظیم دوره آزمایشی"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "Trial Period Unit"
+msgstr "واحد دوره آزمایشی"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_trial_duration
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_trial_duration
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_form_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_form_view
+msgid "Trial duration"
+msgstr "مدت آزمایش"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__activity_exception_decoration
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع فعالیت استثناء در ضبط."
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_trial_unit
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__sh_unit
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_trial_unit
+msgid "Unit"
+msgstr "واحد"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__sh_unit
+msgid "Units"
+msgstr "واحد"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_last_payment_status__unpaid
+msgid "Unpaid"
+msgstr "بدون پرداخت"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "Unpaid Subscription"
+msgstr "اشتراک پرداخت نشده"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_unread
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_unread
+msgid "Unread Messages"
+msgstr "پیام های خوانده نشده"
+
+
+
+
+
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__message_unread_counter
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "پیشخوان پیام های خوانده نشده"
+
+#. module: sh_subscription
+#: model:res.groups,name:sh_subscription.group_user_sh_subscription
+msgid "User"
+msgstr "کاربر"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_plan__website_message_ids
+#: model:ir.model.fields,field_description:sh_subscription.field_sh_subscription_subscription__website_message_ids
+msgid "Website Messages"
+msgstr "پیام های وب سایت"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_plan__website_message_ids
+#: model:ir.model.fields,help:sh_subscription.field_sh_subscription_subscription__website_message_ids
+msgid "Website communication history"
+msgstr "سابقه ارتباطات وب سایت"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_reminder_template__sh_reminder_unit__week(s)
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_trial_unit__week
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_unit__week
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_trial_unit__week
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_unit__week
+msgid "Week(s)"
+msgstr "هفته (ها)"
+
+#. module: sh_subscription
+#: model:product.attribute.value,name:sh_subscription.product_attribute_subscription_value_weekly
+msgid "Weekly"
+msgstr "هفتگی"
+
+#. module: sh_subscription
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_trial_unit__year
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_plan__sh_unit__year
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_trial_unit__year
+#: model:ir.model.fields.selection,name:sh_subscription.selection__sh_subscription_subscription__sh_unit__year
+msgid "Year(s)"
+msgstr "سال ها)"
+
+#. module: sh_subscription
+#: model:product.attribute.value,name:sh_subscription.product_attribute_subscription_value_yearly
+msgid "Yearly"
+msgstr "سالانه"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_portal_my_subscriptions
+msgid "Your Subscription is in Never Expire Mode."
+msgstr "اشتراک شما در حالت منقضی هرگز نیست."
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Your plan is active."
+msgstr "برنامه شما فعال است."
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Your plan is cancelled."
+msgstr "برنامه شما لغو شده است."
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Your plan is closed."
+msgstr "برنامه شما بسته است"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Your plan is expired."
+msgstr "برنامه شما منقضی شده است"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Your plan is renewed."
+msgstr "برنامه شما تمدید شده است."
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_portal_content
+msgid "Your will plan active very soon."
+msgstr "شما خیلی زود برنامه ریزی خواهید کرد."
+
+#. module: sh_subscription
+#: model:ir.actions.act_window,name:sh_subscription.action_sh_sh_account_move
+msgid "account.move"
+msgstr "حساب"
+
+#. module: sh_subscription
+#: model:ir.model.fields,help:sh_subscription.field_product_product__sh_product_subscribe
+#: model:ir.model.fields,help:sh_subscription.field_product_template__sh_product_subscribe
+msgid "click false to hide."
+msgstr "برای پنهان کردن روی False کلیک کنید."
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_reason_search_view
+msgid "created by"
+msgstr "خلق شده توسط"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_reason_search_view
+msgid "created date"
+msgstr "تاریخ ایجاد شده"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+msgid "duration"
+msgstr "مدت زمان"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_plan_search_view
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_reason_search_view
+msgid "name"
+msgstr "نام"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "plan Number Of cyccle greater than 3"
+msgstr "تعداد سیکلت بیشتر از 3 برنامه ریزی کنید"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "plan Number of Cycle"
+msgstr "تعداد چرخه برنامه ریزی"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "plan Product Quantity"
+msgstr "تعیین مقدار محصول"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "plan Source Manual"
+msgstr "دفترچه راهنمای منبع"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "plan Source Sale Order"
+msgstr "سفارش فروش منبع"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "plan price"
+msgstr "قیمت برنامه ریزی"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "product"
+msgstr "تولید - محصول"
+
+#. module: sh_subscription
+#: model:ir.model,name:sh_subscription.model_sh_subscription_report
+msgid "sh.subscription.report"
+msgstr "sh.subscription.Report"
+
+#. module: sh_subscription
+#: model:ir.model.fields,field_description:sh_subscription.field_account_bank_statement_line__sh_subscription_id
+#: model:ir.model.fields,field_description:sh_subscription.field_account_move__sh_subscription_id
+#: model:ir.model.fields,field_description:sh_subscription.field_account_payment__sh_subscription_id
+msgid "subscription"
+msgstr "اشتراک، ابونمان"
+
+#. module: sh_subscription
+#: model_terms:ir.ui.view,arch_db:sh_subscription.sh_subscription_subscription_search_view
+msgid "subscription plan"
+msgstr "برنامه اشتراک"
+
+#. module: sh_subscription
+#: model:mail.template,subject:sh_subscription.sh_subscription_customer_email_expire_notify
+msgid ""
+"{{object.sh_company_id.name}} Your Subscription (Ref {{object.name or "
+"'n/a'}}) is about to expire"
+msgstr ""
+
+#. module: sh_subscription
+#: model:mail.template,subject:sh_subscription.sh_subscription_customer_email
+msgid ""
+"{{object.sh_company_id.name}} Your Subscription (Ref {{object.name or "
+"'n/a'}}) is {{object._subscription_email_subject()}}"
+msgstr ""
