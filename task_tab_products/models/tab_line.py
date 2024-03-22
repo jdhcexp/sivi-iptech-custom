@@ -36,6 +36,11 @@ class TabLine(models.Model):
         comodel_name='project.task',
         string="Order Reference",
         ondelete='cascade', index=True, copy=False)
+    order_simcard_id = fields.Many2one(
+        comodel_name='project.task',
+        string="Order Reference",
+        ondelete='cascade', index=True, copy=False)
+
 
     # tab_id = fields.Many2one(
     #     comodel_name='project.task',
@@ -220,7 +225,10 @@ class TabLine(models.Model):
         for patv in sorted_custom_ptav:
             pacv = self.product_custom_attribute_value_ids.filtered(
                 lambda pcav: pcav.custom_product_template_attribute_value_id == patv)
-            name += "\n" + pacv.custom_product_template_attribute_value_id[0].attribute_id[0].display_name +': '+ pacv.custom_value
+            if pacv.custom_value:
+                name += "\n" + pacv.custom_product_template_attribute_value_id[0].attribute_id[0].display_name +': '+ pacv.custom_value
+            else:
+                name += "\n" + pacv.custom_product_template_attribute_value_id[0].attribute_id[0].display_name
 
         return name
 

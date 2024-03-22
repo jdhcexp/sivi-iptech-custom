@@ -47,7 +47,7 @@ class Task(models.Model):
                            )
 
     simcard = fields.One2many(comodel_name='tab.line',
-                           inverse_name='order_site_id',
+                           inverse_name='order_simcard_id',
                            copy=True, auto_join=True
                            )
 
@@ -112,11 +112,11 @@ class Task(models.Model):
                     product = self.env['product.product'].search([('id', '=', prod['id'])])
                     if product:
                         self.site = [(0, 0, {'product_id': product.id, 'type': prod['type']})]
-            if self.name == 'Entrega de SIMCARD':
-                if prod['type'] == 'equipos' and lsimcard == 0:
-                    product = self.env['product.product'].search([('id', '=', prod['id'])])
-                    if product:
-                        self.simcard = [(0, 0, {'product_id': product.id, 'type': prod['type']})]
+            #if self.name == 'Entrega de SIMCARD':
+            #    if prod['type'] == 'equipos' and lsimcard == 0:
+            #        product = self.env['product.product'].search([('id', '=', prod['id'])])
+            #        if product:
+            #            self.simcard = [(0, 0, {'product_id': product.id, 'type': prod['type']})]
         return res
     #
     #
