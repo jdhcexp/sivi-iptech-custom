@@ -19,9 +19,9 @@
                  <input class="form-control" type="file" id="ccFile" t-if="!state.hidecc"/>
                  <h3 t-if="state.hidecc"><t t-esc="state.ccname"/> <span class="badge bg-secondary" >ok</span></h3>
                  <br></br>
-                 <label for="ccFile" class="form-label">Cedula Respaldo:</label>
+                 <label for="ccFileBack" class="form-label">Cedula Respaldo:</label>
                  <input class="form-control" type="file" id="ccFileBack" t-if="!state.hideccback"/>
-                 <h3 t-if="state.hidecc"><t t-esc="state.ccnameback"/> <span class="badge bg-secondary" >ok</span></h3>
+                 <h3 t-if="state.hideccback"><t t-esc="state.ccnameback"/> <span class="badge bg-secondary" >ok</span></h3>
                  <br></br>
                  <label for="servFile" class="form-label">Recibo de Servicios Públicos:</label>
                  <input class="form-control" type="file" id="servFile" t-if="!state.hideserv"/>
@@ -40,9 +40,9 @@
                  <input class="form-control" type="file" id="ccrFile" t-if="!state.hideccr" />
                 <h3 t-if="state.hideccr"><t t-esc="state.ccrname"/> <span class="badge bg-secondary" >ok</span></h3>
                 <br></br>
-                <label for="ccFile" class="form-label">Cedula de Representante Legal Respaldo:</label>
+                <label for="ccrFileBack" class="form-label">Cedula de Representante Legal Respaldo:</label>
                  <input class="form-control" type="file" id="ccrFileBack" t-if="!state.hideccrback"/>
-                 <h3 t-if="state.hidecc"><t t-esc="state.ccrnameback"/> <span class="badge bg-secondary" >ok</span></h3>
+                 <h3 t-if="state.hideccrback"><t t-esc="state.ccrnameback"/> <span class="badge bg-secondary" >ok</span></h3>
                  <br></br>
             </div>
             <div>
@@ -50,7 +50,7 @@
 
             </div>
             <br></br>
-            <button class="btn btn-primary" t-on-click="uploadDoc">subir</button>
+            <button class="btn btn-primary" t-on-click="uploadDoc" t-if="state.sendEnabled">subir</button>
 
         </div>
     </t>
