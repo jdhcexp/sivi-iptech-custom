@@ -50,6 +50,7 @@ class Task(models.Model):
                            inverse_name='order_simcard_id',
                            copy=True, auto_join=True
                            )
+    scheduled_date = fields.Date(string="Fecha Programada")
 
     @api.model
     def default_get(self, fields):
