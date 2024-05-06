@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+	<record id="view_task_kanban_custom" model="ir.ui.view">
+            <field name="name">project.task.kanban.custom</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@class='o_kanban_record_headings']" position="inside">
+                    <div attrs="{'invisible': [('name', 'not in', ('Visita en Sitio'))]}">
+                        <span>Fecha programada: </span>
+                        <field name="scheduled_date" ></field>
+                    </div>
+                </xpath>
+            </field>
+        </record>
     <record id="tt_project_task_view_form" model="ir.ui.view">
         <field name="name">project.task</field>
         <field name="model">project.task</field>
