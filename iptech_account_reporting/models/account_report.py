@@ -40,8 +40,15 @@ class AccountReport(models.Model):
 				COALESCE(SPLIT_PART(pg.complete_name, '/', array_length(string_to_array(pg.complete_name, '/'), 1)), '') AS client_type,                
 				rp.zip as id_city,
 				rp.city as city,				
-				COALESCE(SPLIT_PART(pg.complete_name, '/', array_length(string_to_array(pg.complete_name, '/'), 1) - 1), '') AS service_type,				
-                am.amount_total_signed as total,
+				COALESCE(
+		                    CASE 
+		                        WHEN array_length(string_to_array(pg.complete_name, '/'), 1) > 1 THEN
+		                            SPLIT_PART(pg.complete_name, '/', array_length(string_to_array(pg.complete_name, '/'), 1) - 1)
+		                        ELSE
+		                            ''
+		                    END,
+		                '') AS service_type,	
+		                am.amount_total_signed as total,
 				ap.create_Date as payment_date
                 FROM public.account_move am
                 left join res_partner rp ON am.partner_id = rp.id
