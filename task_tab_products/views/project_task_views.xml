@@ -13,6 +13,29 @@
                 </xpath>
             </field>
         </record>
+
+	<record id="view_task_tree_updated" model="ir.ui.view">
+         <field name="name">project.task.tree.custom</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="generic_request_project.view_task_tree2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='request_id']" position="replace">
+
+            </xpath>
+            <xpath expr="//field[@name='request_service_id']" position="replace">
+
+            </xpath>
+            <xpath expr="//field[@name='request_category_id']" position="replace">
+
+            </xpath>
+            <xpath expr="//field[@name='request_type_id']" position="replace">
+
+            </xpath>
+            <xpath expr="//field[@name='activity_ids']" position="after">
+                 <field name="scheduled_date" ></field>
+            </xpath>
+        </field>
+    </record>
     <record id="tt_project_task_view_form" model="ir.ui.view">
         <field name="name">project.task</field>
         <field name="model">project.task</field>
