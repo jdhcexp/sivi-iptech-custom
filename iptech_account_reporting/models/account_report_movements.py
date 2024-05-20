@@ -21,7 +21,7 @@ class AccountReportMovements(models.Model):
 
     def init(self):
         self._cr.execute("""      
-		DROP VIEW account_sql_report_movemenns;                    
+		DROP VIEW account_sql_report_movements;                    
             CREATE OR REPLACE VIEW account_sql_report_movements AS (
             SELECT row_number() OVER() as id,   
 				'001' as a1,
