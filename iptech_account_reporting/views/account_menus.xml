@@ -3,7 +3,7 @@
 
 <data>
 
-    <record id="account_sql_report_tree" model="ir.ui.view">
+    <record id="account_sql_report_sales_tree" model="ir.ui.view">
             <field name="name">account.sql.report.sales.tree</field>
             <field name="model">account.sql.report.sales</field>
             <field name="arch" type="xml">
@@ -41,12 +41,12 @@
             </field>
         </record>
 
-    <record id="action_account_report" model="ir.actions.act_window">
+    <record id="action_account_report_sales" model="ir.actions.act_window">
             <field name="name">Chart of Accounts sales</field>
             <field name="res_model">account.sql.report.sales</field>
             <field name="view_mode">tree</field>
         </record>
 
-    <menuitem id="siesa_reporting" name="Siesa" parent="account.menu_finance" action="action_account_report" sequence="10"/>
+    <menuitem id="siesa_reporting" name="Siesa" parent="account.menu_finance" action="action_account_report_sales" sequence="10"/>
     </data>
 </odoo>
