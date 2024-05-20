@@ -4,27 +4,26 @@
 <data>
 
     <record id="account_sql_report_tree" model="ir.ui.view">
-            <field name="name">account.sql.report.tree</field>
-            <field name="model">account.sql.report.custom</field>
+            <field name="name">account.sql.report.sales.tree</field>
+            <field name="model">account.sql.report.sales</field>
             <field name="arch" type="xml">
                 <tree>
                     
 
-                    <field name="invoice_partner"/>
-                    <field name="razon_social"/>
-                    <field name="nit"/>
-                    <field name="service"/>
-                    <field name="address"/>
-                    <field name="reference"/>
-                    <field name="comercial"/>
-                    <field name="service_line"/>
-                    <field name="sub_business_line"/>
-                    <field name="client_type"/>
-                    <field name="id_city"/>
-                    <field name="city"/>
-                    <field name="service_type"/>
-                    <field name="total"/>
-                    <field name="payment_date"/>
+                    <field name="a1"/>
+                    <field name="a2"/>
+                    <field name="a3"/>
+                    <field name="a4"/>
+                    <field name="a5"/>
+                    <field name="a6"/>
+                    <field name="a7"/>
+                    <field name="a8"/>
+                    <field name="a9"/>
+                    <field name="a10"/>
+                    <field name="a11"/>
+                    <field name="a12"/>
+                    <field name="a13"/>
+                    <field name="a14"/>
 
 <!--                    <field name="company_currency_id" invisible="1"/>-->
 
@@ -43,8 +42,8 @@
         </record>
 
     <record id="action_account_report" model="ir.actions.act_window">
-            <field name="name">Chart of Accounts</field>
-            <field name="res_model">account.sql.report.custom</field>
+            <field name="name">Chart of Accounts sales</field>
+            <field name="res_model">account.sql.report.sales</field>
             <field name="view_mode">tree</field>
         </record>
 
