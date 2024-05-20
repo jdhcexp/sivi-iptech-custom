@@ -23,8 +23,8 @@ class AccountReport(models.Model):
 
 
     def init(self):
-        self._cr.execute("""
-            DROP VIEW account_sql_report_sales;
+        self._cr.execute("""            
+            CREATE OR REPLACE VIEW account_sql_report_sales AS (
             SELECT row_number() OVER() as id,   
 				'001' as a1,	
 				'FEE' as a2,
