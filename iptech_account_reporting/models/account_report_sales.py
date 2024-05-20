@@ -18,7 +18,7 @@ class AccountReport(models.Model):
     a11 = fields.Char(string='Sucursal del cliente a remisionar"')
     a12 = fields.Char(string='Tercero vendedor')
     a13 = fields.Char(string='Condicion de pago')
-    a14 = fields.Float(string='Observaciones del documento')
+    a14 = fields.Char(string='Observaciones del documento')
     
 
 
