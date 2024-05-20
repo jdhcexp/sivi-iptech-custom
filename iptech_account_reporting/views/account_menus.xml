@@ -41,12 +41,92 @@
             </field>
         </record>
 
+    <record id="account_sql_report_cuotas_tree" model="ir.ui.view">
+            <field name="name">account.sql.report.cuotas.tree</field>
+            <field name="model">account.sql.report.cuotas</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+
+                    <field name="a1"/>
+                    <field name="a2"/>
+                    <field name="a3"/>
+                    <field name="a4"/>
+                    <field name="a5"/>                  
+
+<!--                    <field name="company_currency_id" invisible="1"/>-->
+
+                   <!-- <field name="date" string="fecha"/>
+                    <field name="name"/>
+                    <field name="partner_id" optional="show"/>
+                    <field name="ref" optional="show"/>
+                    <field name="journal_id"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                    <field name="amount_total_signed" sum="Total Amount" string="Total" decoration-bf="1"/>
+                    <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'posted'"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="to_check" optional="hide" widget="boolean_toggle"/>-->
+                </tree>
+            </field>
+        </record>
+
+<record id="account_sql_report_movements_tree" model="ir.ui.view">
+            <field name="name">account.sql.report.movements.tree</field>
+            <field name="model">account.sql.report.movements</field>
+            <field name="arch" type="xml">
+                <tree>
+                    
+
+                    <field name="a1"/>
+                    <field name="a2"/>
+                    <field name="a3"/>
+                    
+                    <field name="a5"/>
+                    <field name="a6"/>
+                    <field name="a7"/>
+                    <field name="a8"/>
+                    <field name="a9"/>
+                    <field name="a10"/>
+                    <field name="a11"/>
+                    <field name="a12"/>
+                    <field name="a13"/>
+                    
+
+<!--                    <field name="company_currency_id" invisible="1"/>-->
+
+                   <!-- <field name="date" string="fecha"/>
+                    <field name="name"/>
+                    <field name="partner_id" optional="show"/>
+                    <field name="ref" optional="show"/>
+                    <field name="journal_id"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                    <field name="amount_total_signed" sum="Total Amount" string="Total" decoration-bf="1"/>
+                    <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'posted'"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="to_check" optional="hide" widget="boolean_toggle"/>-->
+                </tree>
+            </field>
+        </record>
     <record id="action_account_report_sales" model="ir.actions.act_window">
             <field name="name">Chart of Accounts sales</field>
             <field name="res_model">account.sql.report.sales</field>
             <field name="view_mode">tree</field>
         </record>
 
-    <menuitem id="siesa_reporting" name="Siesa" parent="account.menu_finance" action="action_account_report_sales" sequence="10"/>
+        <record id="action_account_report_cuotas" model="ir.actions.act_window">
+            <field name="name">Chart of Accounts cuotas</field>
+            <field name="res_model">account.sql.report.cuotas</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+         <record id="action_account_report_movements" model="ir.actions.act_window">
+            <field name="name">Chart of Accounts movements</field>
+            <field name="res_model">account.sql.report.movements</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+    <menuitem id="siesa_reporting" name="Siesa Ventas" parent="account.menu_finance" action="action_account_report_sales" sequence="10"/>
+    <menuitem id="siesa_reporting_cuotas" name="Siesa Cuotas" parent="account.menu_finance" action="action_account_report_cuotas" sequence="11"/>
+    <menuitem id="siesa_reporting_movements" name="Siesa Movimientos" parent="account.menu_finance" action="action_account_report_movements" sequence="11"/>
     </data>
 </odoo>
