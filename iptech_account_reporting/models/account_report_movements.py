@@ -21,7 +21,7 @@ class AccountReportMovements(models.Model):
 
     def init(self):
         self._cr.execute("""                        
-            CREATE OR REPLACE VIEW account_sql_report_sales AS (
+            CREATE OR REPLACE VIEW account_sql_report_movements AS (
             SELECT row_number() OVER() as id,   
 				'001' as a1,
 				'FEE' as a2,
