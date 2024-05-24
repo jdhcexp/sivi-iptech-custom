@@ -7,16 +7,16 @@ class AccountReportMovements(models.Model):
 
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
-    a3 = fields.Char(string='Consecutivo')    
-    a5 = fields.Char(string="Numero")
+    a3 = fields.Char(string='Consecutivo numero')    
+    a5 = fields.Char(string="Numero de registro")
     a6 = fields.Char(string="Centro de operación movimiento")
     a7 = fields.Char(string="Centro de costo movimiento")
     a8 = fields.Char(string="Lista de precio")
-    a9 = fields.Char(string="Cantidad")
+    a9 = fields.Integer(string="Cantidad base")
     a10 = fields.Char(string="Valor bruto")
     a11 = fields.Char(string='Descripcion')
     a12 = fields.Char(string='Referencia item')
-    a13 = fields.Char(string='LINEA DE SERVICIO')   
+    a13 = fields.Char(string='Unidad de negocio movimiento')   
 
 
     def init(self):
@@ -24,6 +24,7 @@ class AccountReportMovements(models.Model):
 		DROP VIEW account_sql_report_movements;                    
             CREATE OR REPLACE VIEW account_sql_report_movements AS (
             SELECT row_number() OVER() as id,   
+				
 				'001' as a1,
 				'FEE' as a2,
 				am.id as a3,
@@ -43,7 +44,7 @@ class AccountReportMovements(models.Model):
 				END AS a8,
 				1 as a9,
 				aml.price_total as a10,
-				'SERVICIO ENTREGADO ' || COALESCE(pt.name->>'en_US', 'Unknown') || ' ' || rp.street || ' PERIODO FACTURADO -- LUGAR DEL SERVICIO ' || rp.city || ' DISPONIBILIDAD --' as a11,
+				'SERVICIO ENTREGADO ' || COALESCE(pt.name->>'en_US', 'Unknown') || ' ' || rp.street || ' PERIODO FACTURADO ' || date_part('day', (date_trunc('month', (aml.date + interval '1 month')) - interval '1 day')::date) - date_part('day', aml.date)||' LUGAR DEL SERVICIO ' || rp.city || ' DISPONIBILIDAD --' as a11,
 				pp.default_code as a12,
 				CASE COALESCE(SPLIT_PART(pg.complete_name, '/', 1), '')
 					WHEN 'CONECTIVIDAD GESTIONADA' THEN '001'
