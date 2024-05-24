@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 class AccountReport(models.Model):
-    _name='account.sql.report.sales'
+    _name='account.sql.report.sales1'
     _description = 'account sql report sales'
     _auto = False
 	a0 = fields.Char(string="Factura")
