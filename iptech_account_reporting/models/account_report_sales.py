@@ -4,7 +4,8 @@ class AccountReport(models.Model):
     _name='account.sql.report.sales'
     _description = 'account sql report sales'
     _auto = False
-    a0 = fields.Many2one('account.move',string="Factura")
+    a00 = fields.Many2one('account.move',string="Id Factura")
+	a0 = fields.Char(string="Factura")
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
     a3 = fields.Integer(string='Numero de documento')
@@ -27,6 +28,7 @@ class AccountReport(models.Model):
             DROP VIEW account_sql_report_sales;       
             CREATE OR REPLACE VIEW account_sql_report_sales AS (
             SELECT row_number() OVER() as id,   
+				am.id as a00,
 				am.payment_reference as a0,
 				'001' as a1,	
 				'FEE' as a2,
