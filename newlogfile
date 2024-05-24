@@ -1,0 +1,100 @@
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 463, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/opt/odoo/custom/iptech_account_reporting/__init__.py", line 1, in <module>
+    from . import models
+  File "/opt/odoo/custom/iptech_account_reporting/models/__init__.py", line 3, in <module>
+    from . import account_report_sales
+  File "/opt/odoo/custom/iptech_account_reporting/models/account_report_sales.py", line 7
+    	a0 = fields.Char(string="Factura")
+    ^
+TabError: inconsistent use of tabs and spaces in indentation
+2024-05-24 10:31:23,383 265299 INFO odooiptech werkzeug: 181.225.81.219 - - [24/May/2024 10:31:23] "GET /service_worker.js HTTP/1.1" 500 - 11 0.010 1.231
+2024-05-24 10:31:39,420 265328 INFO odooiptech odoo.modules.loading: loading 1 modules... 
+2024-05-24 10:31:39,431 265328 INFO odooiptech odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2024-05-24 10:31:39,441 265328 INFO odooiptech odoo.modules.loading: loading 210 modules... 
+2024-05-24 10:31:39,601 265328 CRITICAL odooiptech odoo.modules.module: Couldn't load module iptech_account_reporting 
+2024-05-24 10:31:39,601 265328 CRITICAL odooiptech odoo.modules.module: inconsistent use of tabs and spaces in indentation (account_report_sales.py, line 7) 
+2024-05-24 10:31:39,603 265328 WARNING odooiptech odoo.modules.loading: Transient module states were reset 
+2024-05-24 10:31:39,603 265328 ERROR odooiptech odoo.modules.registry: Failed to load registry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-6>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odooiptech'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 463, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/opt/odoo/custom/iptech_account_reporting/__init__.py", line 1, in <module>
+    from . import models
+  File "/opt/odoo/custom/iptech_account_reporting/models/__init__.py", line 3, in <module>
+    from . import account_report_sales
+  File "/opt/odoo/custom/iptech_account_reporting/models/account_report_sales.py", line 7
+    	a0 = fields.Char(string="Factura")
+    ^
+TabError: inconsistent use of tabs and spaces in indentation
+2024-05-24 10:31:39,604 265328 WARNING odooiptech odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 64, in __new__
+    return cls.registries[db_name]
+  File "<decorator-gen-6>", line 2, in __getitem__
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'odooiptech'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 115, in _process_jobs
+    registry = odoo.registry(db_name)
+  File "/usr/lib/python3/dist-packages/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 66, in __new__
+    return cls.new(db_name)
+  File "<decorator-gen-14>", line 2, in new
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 372, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 188, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 463, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/opt/odoo/custom/iptech_account_reporting/__init__.py", line 1, in <module>
+    from . import models
+  File "/opt/odoo/custom/iptech_account_reporting/models/__init__.py", line 3, in <module>
+    from . import account_report_sales
+  File "/opt/odoo/custom/iptech_account_reporting/models/account_report_sales.py", line 7
+    	a0 = fields.Char(string="Factura")
+    ^
+TabError: inconsistent use of tabs and spaces in indentation
