@@ -4,7 +4,7 @@ class AccountReport(models.Model):
     _name='account.sql.report.sales'
     _description = 'account sql report sales'
     _auto = False
-    a0 = fields.Char(string="Factura")
+    a0 = fields.Many2one('acount.move',string="Factura")
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
     a3 = fields.Integer(string='Numero de documento')

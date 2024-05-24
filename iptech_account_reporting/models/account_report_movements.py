@@ -23,8 +23,7 @@ class AccountReportMovements(models.Model):
         self._cr.execute("""      
 		DROP VIEW account_sql_report_movements;                    
             CREATE OR REPLACE VIEW account_sql_report_movements AS (
-            SELECT row_number() OVER() as id,   
-				
+            SELECT row_number() OVER() as id,   				
 				'001' as a1,
 				'FEE' as a2,
 				am.id as a3,
@@ -44,7 +43,7 @@ class AccountReportMovements(models.Model):
 				END AS a8,
 				1 as a9,
 				aml.price_total as a10,
-				'SERVICIO ENTREGADO ' || COALESCE(pt.name->>'en_US', 'Unknown') || ' ' || rp.street || ' PERIODO FACTURADO ' || date_part('day', (date_trunc('month', (aml.date + interval '1 month')) - interval '1 day')::date) - date_part('day', aml.date)||' LUGAR DEL SERVICIO ' || rp.city || ' DISPONIBILIDAD --' as a11,
+				'SERVICIO ENTREGADO ' || COALESCE(pt.name->>'en_US', 'Unknown') || ' ' || COALESCE(rp.street,'Unknown') || ' PERIODO FACTURADO ' || date_part('day', (date_trunc('month', (aml.date + interval '1 month')) - interval '1 day')::date) - date_part('day', aml.date)||' LUGAR DEL SERVICIO ' || COALESCE(rp.city,'Unknown') || ' DISPONIBILIDAD --' as a11,
 				pp.default_code as a12,
 				CASE COALESCE(SPLIT_PART(pg.complete_name, '/', 1), '')
 					WHEN 'CONECTIVIDAD GESTIONADA' THEN '001'
