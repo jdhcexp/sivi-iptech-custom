@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 class AccountReportMovements(models.Model):
-    _name='account.sql.report.movements1'
+    _name='account.sql.report.movements'
     _description = 'account sql report movements'
     _auto = False
 

@@ -4,8 +4,8 @@
 <data>
 
     <record id="account_sql_report_sales_tree" model="ir.ui.view">
-            <field name="name">account.sql.report.sales1.tree</field>
-            <field name="model">account.sql.report.sales1</field>
+            <field name="name">account.sql.report.sales.tree</field>
+            <field name="model">account.sql.report.sales</field>
             <field name="arch" type="xml">
                 <tree>
                     
@@ -71,8 +71,8 @@
         </record>
 
 <record id="account_sql_report_movements_tree" model="ir.ui.view">
-            <field name="name">account.sql.report.movements1.tree</field>
-            <field name="model">account.sql.report.movements1</field>
+            <field name="name">account.sql.report.movements.tree</field>
+            <field name="model">account.sql.report.movements</field>
             <field name="arch" type="xml">
                 <tree>
                     
@@ -109,7 +109,7 @@
         </record>
     <record id="action_account_report_sales" model="ir.actions.act_window">
             <field name="name">Chart of Accounts sales</field>
-            <field name="res_model">account.sql.report.sales1</field>
+            <field name="res_model">account.sql.report.sales</field>
             <field name="view_mode">tree</field>
         </record>
 
@@ -121,7 +121,7 @@
 
          <record id="action_account_report_movements" model="ir.actions.act_window">
             <field name="name">Chart of Accounts movements</field>
-            <field name="res_model">account.sql.report.movements1</field>
+            <field name="res_model">account.sql.report.movements</field>
             <field name="view_mode">tree</field>
         </record>
 
