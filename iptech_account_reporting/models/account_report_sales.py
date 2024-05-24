@@ -4,10 +4,10 @@ class AccountReport(models.Model):
     _name='account.sql.report.sales'
     _description = 'account sql report sales'
     _auto = False
-
+	a0 = fields.Char(string="Factura")
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
-    a3 = fields.Char(string='Numero de documento')
+    a3 = fields.Integer(string='Numero de documento')
     a4 = fields.Char(string="Fecha del documento")
     a5 = fields.Char(string="Tercero cliente")
     a6 = fields.Char(string="Estado del documento")
@@ -27,6 +27,7 @@ class AccountReport(models.Model):
             DROP VIEW account_sql_report_sales;       
             CREATE OR REPLACE VIEW account_sql_report_sales AS (
             SELECT row_number() OVER() as id,   
+				am.payment_reference as a0,
 				'001' as a1,	
 				'FEE' as a2,
 				am.id as a3,
