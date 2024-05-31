@@ -4,11 +4,11 @@ class AccountReport(models.Model):
     _name='account.sql.report.sales'
     _description = 'account sql report sales'
     _auto = False
-    a00 = fields.Many2one('account.move',string="Id Factura")
-	a0 = fields.Char(string="Factura")
+    #a00 = fields.Many2one('account.move',string="Id Factura")
+    #a0 = fields.Char(string="Factura")
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
-    a3 = fields.Integer(string='Numero de documento')
+    id = fields.Integer(string='Numero de documento')
     a4 = fields.Char(string="Fecha del documento")
     a5 = fields.Char(string="Tercero cliente")
     a6 = fields.Char(string="Estado del documento")
@@ -27,13 +27,13 @@ class AccountReport(models.Model):
         self._cr.execute("""     
             DROP VIEW account_sql_report_sales;       
             CREATE OR REPLACE VIEW account_sql_report_sales AS (
-            SELECT row_number() OVER() as id,   
-				am.id as a00,
-				am.payment_reference as a0,
+	    select row_number() OVER() as id, foo.* from
+            (SELECT distinct
 				'001' as a1,	
 				'FEE' as a2,
-				am.id as a3,
-				TO_CHAR(am.invoice_date, 'YYYYMMDD') as a4,
+				--row_number() OVER() as a3,
+				--TO_CHAR(am.invoice_date, 'YYYYMMDD') as a4,
+				date_trunc('month', am.invoice_date) AS a4,
 				rp.vat as a5,    
 				'' as a6,
 				'001' as a7,
@@ -79,7 +79,7 @@ class AccountReport(models.Model):
                 left join res_users ru ON am.invoice_user_id = ru.id
 				left join res_partner rp1 ON ru.partner_id = rp1.id
 				left join account_payment ap ON am.id = ap.move_id
-				where pp.sh_product_subscribe = 'true'
+				where pp.sh_product_subscribe = 'true') as foo
             )
         """)
 

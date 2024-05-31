@@ -58,7 +58,6 @@ class AccountReportMovements(models.Model):
                 left join product_product pp on aml.product_id = pp.id
 				left join product_template pt on pp.product_tmpl_id = pt.id
 				left join product_category pg ON pt.categ_id = pg.id
-				where pp.sh_product_subscribe = 'true'
 				order by am.id asc
             )
         """)

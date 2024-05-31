@@ -8,10 +8,10 @@
             <field name="model">account.sql.report.sales</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="a00" widget="many2onebutton"/>                    
+                    <!--<field name="a00" widget="many2onebutton"/>-->                    
                     <field name="a1"/>
                     <field name="a2"/>
-                    <field name="a3"/>
+                    <field name="id"/>
                     <field name="a4"/>
                     <field name="a5"/>
                     <field name="a6"/>
