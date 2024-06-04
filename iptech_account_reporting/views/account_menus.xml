@@ -75,7 +75,7 @@
             <field name="arch" type="xml">
                 <tree>
                     
-
+                    <field name="a0" widget="many2onebutton"/>
                     <field name="a1"/>
                     <field name="a2"/>
                     <field name="a3"/>

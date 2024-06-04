@@ -33,7 +33,7 @@ class AccountReport(models.Model):
 				'FEE' as a2,
 				--row_number() OVER() as a3,
 				--TO_CHAR(am.invoice_date, 'YYYYMMDD') as a4,
-				date_trunc('month', am.invoice_date) AS a4,
+				TO_CHAR(date_trunc('month', am.invoice_date), 'YYYYMMDD') AS a4,
 				rp.vat as a5,    
 				'' as a6,
 				'001' as a7,
