@@ -8,7 +8,7 @@ class AccountReport(models.Model):
     #a0 = fields.Char(string="Factura")
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
-    id = fields.Integer(string='Numero de documento')
+    id = fields.Char(string='Numero de documento')
     a4 = fields.Char(string="Fecha del documento")
     a5 = fields.Char(string="Tercero cliente")
     a6 = fields.Char(string="Estado del documento")
@@ -24,9 +24,10 @@ class AccountReport(models.Model):
 
 
     def init(self):
-        self._cr.execute("""     
-            DROP VIEW account_sql_report_sales;       
-            CREATE OR REPLACE VIEW account_sql_report_sales AS (
+        self._cr.execute("""
+	    DROP VIEW account_sql_report_movements;
+	    DROP VIEW account_sql_report_sales;
+            CREATE OR REPLACE VIEW account_sql_report_sales as (
 	    select row_number() OVER() as id, foo.* from
             (SELECT distinct
 				'001' as a1,	

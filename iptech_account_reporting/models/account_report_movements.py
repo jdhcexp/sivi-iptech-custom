@@ -5,7 +5,7 @@ class AccountReportMovements(models.Model):
     _description = 'account sql report movements'
     _auto = False
 
-	a0 = fields.Many2one('account.move',string="Id Factura")
+    a0 = fields.Many2one('account.move',string="Id Factura")
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
     a3 = fields.Integer(string='Consecutivo numero')    
@@ -22,10 +22,10 @@ class AccountReportMovements(models.Model):
 
     def init(self):
         self._cr.execute("""      
-		DROP VIEW account_sql_report_movements;                    
+	   
            CREATE OR REPLACE VIEW account_sql_report_movements AS (
             SELECT row_number() OVER() as id,
-								am.payment_reference as a0,
+								am.id as a0,
                                 '001' as a1,
                                 'FEE' as a2,
                                 --am.id as a3,
