@@ -28,6 +28,7 @@ class AccountReport(models.Model):
 	    DROP VIEW IF EXISTS account_sql_report_movements;
 	    DROP VIEW IF EXISTS account_sql_report_sales;
             CREATE OR REPLACE VIEW account_sql_report_sales as (
+        select row_number() OVER() as id,
 	    select row_number() OVER() as a0, foo.* from
             (SELECT distinct
 				'001' as a1,	
