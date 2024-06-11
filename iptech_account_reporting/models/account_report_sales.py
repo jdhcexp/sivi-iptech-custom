@@ -25,6 +25,6 @@ class AccountReport(models.Model):
 
     def init(self):
         self._cr.execute("""
-	    SELECT * FROM account_sql_report_sales
+	    SELECT * FROM account_sql_report_sales;
         """)
 

@@ -22,6 +22,6 @@ class AccountReportMovements(models.Model):
 
     def init(self):
         self._cr.execute("""      
-        SELECT * FROM account_sql_report_movements
+        SELECT * FROM account_sql_report_movements;
         """)
 
