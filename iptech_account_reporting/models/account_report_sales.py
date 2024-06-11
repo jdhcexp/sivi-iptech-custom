@@ -40,7 +40,6 @@ class AccountReport(models.Model):
                          a12,
                          a13,
                          a14
-                from  account_sql_report_sales;
-            );
+                from  account_sql_report_sales;            
         """)
 
