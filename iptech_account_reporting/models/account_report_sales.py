@@ -27,8 +27,7 @@ class AccountReport(models.Model):
         self._cr.execute("""
                 select  id as a0,
                          a1,
-                         a2,
-                         a3,
+                         a2,                         
                          a4,
                          a5,
                          a6,
