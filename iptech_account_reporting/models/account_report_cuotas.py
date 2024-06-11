@@ -16,7 +16,7 @@ class AccountReportCuotas(models.Model):
 
     def init(self):
         self._cr.execute("""      
-		DROP VIEW account_sql_report_cuotas;        
+		DROP VIEW IF EXISTS account_sql_report_cuotas;        
             CREATE OR REPLACE VIEW account_sql_report_cuotas AS (
             SELECT row_number() OVER() as id,   
 				'001' as a1,	
