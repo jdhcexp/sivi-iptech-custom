@@ -25,9 +25,9 @@ class AccountReport(models.Model):
 
     def init(self):
         self._cr.execute("""
-                select  id as 'a0',
+                select  id as a0,
                          a1,
-                         a2,                         
+                         a2,                     
                          a4,
                          a5,
                          a6,
