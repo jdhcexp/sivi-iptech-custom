@@ -11,7 +11,7 @@
                     <!--<field name="a00" widget="many2onebutton"/>-->                    
                     <field name="a1"/>
                     <field name="a2"/>
-                    <field name="id" string="Numero de documento" readonly="False"/>
+                    <field name="id" string="Numero de documento"/>
                     <field name="a4"/>
                     <field name="a5"/>
                     <field name="a6"/>

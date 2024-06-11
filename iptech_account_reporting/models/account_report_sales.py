@@ -8,7 +8,7 @@ class AccountReport(models.Model):
     #a0 = fields.Char(string="Factura")
     a1 = fields.Char(string='Centro de operación del documento')
     a2 = fields.Char(string='Tipo de documento')
-    id = fields.Char(string='Numero de documento')
+    id = fields.Char(string='Numero de documento', readonly=False)
     a4 = fields.Char(string="Fecha del documento")
     a5 = fields.Char(string="Tercero cliente")
     a6 = fields.Char(string="Estado del documento")
