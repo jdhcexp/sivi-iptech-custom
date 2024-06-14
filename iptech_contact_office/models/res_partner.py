@@ -20,5 +20,20 @@ class ResPartner(models.Model):
              "- Private: Private addresses are only visible by authorized users and contain sensitive data (employee home addresses, ...).\n"
              "- Other: Other address for the company (e.g. subsidiary, ...)")
 
-
+    @api.onchange("type")
+    def _get_contact_names(self):
+        companyId = self.parent_id.id.origin
+        print(companyId)
+        officeNumber = 0;
+        contact = self.env['res.partner'].search([('id', '=', companyId)])
+        print(contact)
+        for child in contact.child_ids:
+            if child.type == "office":
+                childnumber = int(child.name.replace("SUC",""))
+                print(childnumber)
+                if childnumber > officeNumber:
+                    officeNumber = childnumber
+        officeNumber = officeNumber+1
+        if self.type == "office":
+            self.name = f"SUC{officeNumber:03}"
 
