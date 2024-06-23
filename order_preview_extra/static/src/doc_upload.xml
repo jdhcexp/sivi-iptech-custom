@@ -15,7 +15,7 @@
             <br></br>
              <div id="persona_natural" t-if="state.type == 'nat'">
 
-                 <label for="ccFile" class="form-label">Cedula Frente:</label>
+                 <label for="ccFile" class="form-label">Cedula Frente: Si tiene un solo archivo que contiene la imagen de la cedula por el frente y por el respaldo carguela aquí unicamente.</label>
                  <input class="form-control" type="file" id="ccFile" t-if="!state.hidecc"/>
                  <h3 t-if="state.hidecc"><t t-esc="state.ccname"/> <span class="badge bg-secondary" >ok</span></h3>
                  <br></br>
@@ -50,7 +50,7 @@
 
             </div>
             <br></br>
-            <button class="btn btn-primary" t-on-click="uploadDoc" t-if="state.sendEnabled">subir</button>
+            <button class="btn btn-primary" t-on-click="uploadDoc" t-if="state.sendEnabled">Cargar Archivos</button>
 
         </div>
     </t>
