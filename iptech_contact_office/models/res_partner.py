@@ -4,8 +4,20 @@ from datetime import datetime, timedelta
 
 class ResPartner(models.Model):
     _inherit = "res.partner"
-
-    stratum = fields.Integer(string="Estrato")
+    
+    stratum = fields.Integer(string='Estrato')
+    contactStratum = fields.Selection([('1', '1'),
+         ('2', '2'),
+         ('3', '3'),
+         ('4', '4'),
+         ('5', '5'),
+         ('6', '6')
+         ], string='Estrato', default='', 
+        help="- Contact: Use this to organize the contact details of employees of a given company (e.g. CEO, CFO, ...).\n"
+             "- Invoice Address : Preferred address for all invoices. Selected by default when you invoice an order that belongs to this company.\n"
+             "- Delivery Address : Preferred address for all deliveries. Selected by default when you deliver an order that belongs to this company.\n"
+             "- Private: Private addresses are only visible by authorized users and contain sensitive data (employee home addresses, ...).\n"
+             "- Other: Other address for the company (e.g. subsidiary, ...)")
     type = fields.Selection(
         [('contact', 'Contact'),
          ('invoice', 'Invoice Address'),
