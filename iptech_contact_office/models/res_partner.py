@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
+    stratum = fields.Integer(string="Estrato")
     type = fields.Selection(
         [('contact', 'Contact'),
          ('invoice', 'Invoice Address'),
@@ -22,18 +23,31 @@ class ResPartner(models.Model):
 
     @api.onchange("type")
     def _get_contact_names(self):
-        companyId = self.parent_id.id.origin
-        print(companyId)
-        officeNumber = 0;
-        contact = self.env['res.partner'].search([('id', '=', companyId)])
-        print(contact)
-        for child in contact.child_ids:
-            if child.type == "office":
-                childnumber = int(child.name.replace("SUC",""))
-                print(childnumber)
-                if childnumber > officeNumber:
-                    officeNumber = childnumber
-        officeNumber = officeNumber+1
-        if self.type == "office":
-            self.name = f"SUC{officeNumber:03}"
+        for record in self:
+            print("vals data")
+            print(record)
+        if self.parent_id:
+            companyId = self.parent_id.id.origin
+            print(companyId)
+            officeNumber = 0;
+            contact = self.env['res.partner'].search([('id', '=', companyId)])
+            print(contact)
+            for child in contact.child_ids:
+                if child.type == "office":
+                    childnumber = int(child.name.replace("SUC",""))
+                    print(childnumber)
+                    if childnumber > officeNumber:
+                        officeNumber = childnumber
+            officeNumber = officeNumber+1
+            if self.type == "office":
+                name = f"SUC{officeNumber:03}"
+                self.env.cr.execute("SELECT id FROM res_partner WHERE parent_id = %d AND name = '%s'" % (companyId, name))
+                sucexist = self.env.cr.fetchone()
+                if sucexist:
+                    print(sucexist)
+                else:
+                    self.name = name
 
+    @api.model
+    def create(self, vals):
+        return super(ResPartner, self).create(vals)
